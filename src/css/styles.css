@@ -5,14 +5,18 @@
   |============================
 */
 /* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+
+@import url('./common-styles/reset.css');
+@import url('./common-styles/base.css');
 
 /* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+
+@import url('./partials-styles/header.css');
+@import url('./partials-styles/hero.css');
+@import url('./partials-styles/about-me.css');
+@import url('./partials-styles/benefits.css');
+@import url('./partials-styles/projects.css');
+@import url('./partials-styles/faq.css');
+@import url('./partials-styles/covers.css');
+@import url('./partials-styles/reviews.css');
+@import url('./partials-styles/footer.css');
