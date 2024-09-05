@@ -1,0 +1,126 @@
+.benefits-section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin: 0;
+}
+.container {
+}
+
+.benefits-container {
+}
+
+.benefits-title {
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 32px;
+}
+.benefist-menu-container {
+}
+.benefist-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.benefist-item {
+  width: 344px;
+  border-radius: 20px;
+  padding: 24px;
+  background-color: #242527;
+}
+.benefist-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 64px;
+}
+.benefits-icon {
+ width: 48px;
+ height: 48px;
+}
+
+.benefist-item-title {
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+.benefist-information {
+  max-width: 296px;
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+}
+.benefist-button {
+  width: 187px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 18px 36px;
+  margin-top: 32px;
+
+  transition: transform 300ms ease-in-out, border-color 300ms ease-in-out;
+}
+.benefist-button:hover,
+.benefist-button:focus {
+  transform: scale(1.1);
+  border-color: #fafafa;
+}
+
+.benefist-button-link {
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+/*=================================== TABLES STYLE 768 START ==================*/
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .benefits-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .benefist-button {
+    margin-bottom: 64px;
+  }
+
+  .benefist-menu {
+    width: 704px;
+    gap: 16px 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/*=================================== TABLES STYLE FINISH ==================*/
+
+/*=================================== DESKTOP STYLE 1440 START==================*/
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+
+  .benefits-section {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+
+  .benefits-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .benefits-title {
+  }
+}
+/*=================================== DESKTOP STYLE FINISH ==================*/
