@@ -1,178 +1,77 @@
 /* Базові стилі для футера */
 .section-footer {
-  display: flex;
+  display: block;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: start;
   padding: 20px;
   max-width: 100%;
   margin: 0 auto;
-  background-color: #1a1a1a; /* Тло футера */
-  color: #ffffff; /* Білий текст */
+  color: #fafafa;
 }
-
-.title-footer {
+.title-div {
   display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+  flex-direction: column;
+  margin-bottom: 63px;
 }
 
 .avatar-footer {
   width: 44px;
   height: 44px;
-  margin-right: 10px;
-  border-radius: 50%;
 }
-
-.title-footer h2 {
-  font-size: 24px;
+.hero-title {
+  font-size: 40px;
   margin: 0;
-  color: #ffffff;
 }
-
 .span-work-footer {
-  color: #e74c3c; /* Червоний колір для "WORK" */
+  color: #ed3b44;
 }
-
+.together {
+  font-size: 40px;
+}
 .contact-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
-  max-width: 300px;
+  max-width: 375px;
   margin-bottom: 20px;
 }
-
+.contact-form input::placeholder {
+  color: #aea8a8;
+  opacity: 1;
+}
 .contact-form input {
-  margin: 10px 0;
   width: 100%;
   border: none;
-  border-bottom: 1px solid #ffffff; /* Білий колір лінії */
+  border-bottom: 1px solid #635e5e;
   background: transparent;
-  color: #ffffff;
-  padding: 10px;
-  outline: none;
+  padding: 16px 0;
 }
-
+#comment {
+  margin-bottom: 32px;
+}
 .send-btn {
-  width: 100%;
   padding: 10px;
-  margin-top: 10px;
+  margin-bottom: 64px;
   cursor: pointer;
-  background-color: #e74c3c;
+  background-color: #ed3b44;
   color: #fff;
   border: none;
   border-radius: 50%;
-  height: 44px;
-  width: 44px;
+  height: 100px;
+  width: 100px;
 }
-
 .contact-info {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 4px;
   margin-top: 20px;
 }
-
 .contact-info a {
-  color: #ffffff;
-  text-decoration: none;
-  margin: 5px 0;
-  background-color: #333;
+  border: 1px solid #635e5e;
   padding: 5px 15px;
   border-radius: 20px;
 }
-
-/* Стили для мобільних пристроїв від 320px до 374px */
-@media (max-width: 374px) {
-  .title-footer h2 {
-    font-size: 18px;
-  }
-
-  .send-btn {
-    width: 100%;
-  }
-}
-
-/* Стили для мобільних пристроїв від 375px до 767px */
-@media (min-width: 375px) and (max-width: 767px) {
-  .contact-form {
-    max-width: 350px;
-  }
-
-  .send-btn {
-    width: 60px;
-    height: 60px;
-  }
-}
-
-/* Стили для планшетів від 768px до 1439px */
-@media (min-width: 768px) and (max-width: 1439px) {
-  .section-footer {
-    max-width: 768px;
-  }
-
-  .title-footer {
-    justify-content: center;
-  }
-
-  .contact-form {
-    flex-direction: row;
-    justify-content: center;
-    max-width: none;
-  }
-
-  .contact-form input {
-    width: 250px;
-    margin: 0 10px;
-  }
-
-  .send-btn {
-    width: 60px;
-    height: 60px;
-  }
-
-  .contact-info {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .contact-info a {
-    margin: 0 10px;
-  }
-}
-
-/* Стили для десктопів від 1440px */
-@media (min-width: 1440px) {
-  .section-footer {
-    max-width: 1200px;
-    padding: 40px;
-  }
-
-  .title-footer {
-    justify-content: center;
-  }
-
-  .title-footer h2 {
-    font-size: 32px;
-  }
-
-  .contact-form {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .contact-form input,
-  .send-btn {
-    width: auto;
-  }
-
-  .contact-info {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .contact-info a {
-    margin: 0 10px;
-  }
+/* TABLET */
+@media screen and(min-width: 768px) {
 }
