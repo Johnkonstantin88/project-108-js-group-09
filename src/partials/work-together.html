@@ -1,10 +1,40 @@
-<section>
-  <img
-    srcset="./src/img/image.jpg"
-    src="./src/img/image.jpg"
-    alt="image-footer"
-    width="44"
-    height="44"
-  />
-  <h2></h2>
+<section class="section-footer">
+  <!-- Заголовок секції -->
+  <div class="title-footer">
+    <img src="/img/image.png" alt="Avatar" class="avatar-footer" />
+    <h2>LET’S <span class="span-work-footer">WORK</span> TOGETHER</h2>
+  </div>
+  <!-- Форма -->
+  <form class="contact-form">
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="clients@gmail.com"
+      pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+      maxlength="50"
+      required
+    />
+    <input
+      type="text"
+      id="comment"
+      name="comment"
+      placeholder="comments"
+      required
+    />
+    <button type="submit" class="send-btn">Send</button>
+  </form>
+  <!-- Контактна інформація -->
+  <div class="contact-info">
+    <a href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
+    <a href="tel:+380111111111">+380 11 1111 11 11</a>
+  </div>
+  <!-- Модальне вікно -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Thank you for your interest in cooperation!</h2>
+      <p>We have received your message and will get back to you soon.</p>
+    </div>
+  </div>
 </section>
