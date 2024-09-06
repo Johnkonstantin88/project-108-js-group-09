@@ -11,14 +11,6 @@
     overflow: hidden;
 }
 
-.example {
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-    height: 1500px;
-    background-color: blueviolet;
-}
-
 .covers-section {
     position: relative;
     display: flex;
@@ -27,7 +19,6 @@
     background-image: url(../img/covers/elements_vectors.png);
     background-position: center;
     overflow: hidden;
-    padding: 10px;
 }
 
 .covers-list {
@@ -92,6 +83,3 @@
         }
     }
 }
-
-/* DESKTOP 1440 */
-@media screen and (min-width: 1440px) {}
