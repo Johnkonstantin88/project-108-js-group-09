@@ -6,7 +6,7 @@
   color: rgba(250, 250, 250, 0.4);
   text-transform: uppercase;
 }
-.wrap-projects {
+.projects-list-item {
   display: flex;
   flex-direction: column;
   margin-bottom: 32px;
@@ -47,8 +47,12 @@
   background-color: var(--red);
   letter-spacing: -0.02em;
   color: var(--white);
+  transition: background-color var(--timing-function);
 }
-.projects-list-item {
+.btn-see-project:hover {
+  background-color: #e0373f;
+}
+.wrap-project-img {
   display: flex;
   justify-content: center;
   background-color: var(--dark);
@@ -61,7 +65,7 @@
   justify-content: center;
   gap: 12px;
 }
-.btn-projects-left {
+.swiper-projects-button-prev {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
   padding: 14px;
@@ -69,7 +73,7 @@
   height: 52px;
   background-color: transparent;
 }
-.btn-projects-right {
+.swiper-projects-button-next {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
   padding: 14px;
@@ -77,6 +81,7 @@
   height: 52px;
   background-color: transparent;
 }
+
 /* ========================================================================================================================================================
 tablet
 ======================================================================================================================================================== */
@@ -126,7 +131,8 @@ desktop
   .projects {
     margin-bottom: 164px;
   }
-  .wrap-projects {
+  .projects-list .projects-list-item {
+    display: flex;
     flex-direction: row;
     justify-content: center;
   }
@@ -140,9 +146,10 @@ desktop
   .project-info-text {
     width: 300px;
   }
-  .projects-list-item {
+  .wrap-project-img {
     border-radius: 0 24px 24px 0;
     padding-left: 37px;
     padding-right: 37px;
+    width: 688px;
   }
 }
