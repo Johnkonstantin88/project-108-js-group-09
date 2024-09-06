@@ -1,5 +1,4 @@
 /* Базові стилі для футера */
-
 .section-footer {
   display: flex;
   flex-direction: column;
@@ -13,7 +12,6 @@
   flex-wrap: wrap;
   width: 400px;
   margin-bottom: 63px;
-  /* padding-left: 32px; */
 }
 .avatar-footer {
   width: 44px;
