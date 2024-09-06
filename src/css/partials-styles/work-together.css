@@ -1,8 +1,10 @@
 /* Базові стилі для футера */
+
 .section-footer {
   display: flex;
   flex-direction: column;
-  text-align: start;
+  justify-content: center;
+  height: 100vh;
   color: #fafafa;
   margin: 85px 32px;
 }
@@ -22,25 +24,23 @@
 }
 .hero-title {
   font-size: 40px;
-  margin: 0;
+  margin: 0 15px;
 }
 .together {
   font-size: 40px;
 }
+/* form */
 .contact-form {
   display: flex;
   flex-direction: row;
-  height: 100%;
-  width: 100%;
-  /* justify-content: space-around; */
-  padding-left: 0px;
-  gap: 4px;
+  gap: 32px;
 }
-.item-input {
-  height: fit-content;
-  width: fit-content;
+.div-input {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
 }
-.contact-form input::placeholder {
+.item-inputt::placeholder {
   color: #aea8a8;
   opacity: 1;
 }
@@ -49,6 +49,8 @@
   border-bottom: 1px solid #635e5e;
   background: transparent;
   padding: 16px 0;
+  height: fit-content;
+  width: fit-content;
 }
 #comment {
   margin-bottom: 32px;
@@ -79,17 +81,38 @@
   border-radius: 20px;
 }
 /* TABLET */
-@media screen and(min-width: 768px) {
-  .title-div {
-    padding-left: 32px;
+@media screen and(max-width: 767px) {
+  .contact-form {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+  .div-input {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
   }
 }
-@media screen and(max-width: 1440px) {
+@media screen and(max-width: 1441px) {
+  .contact-form {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+  }
+  .div-input {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
 }
 /* MOBILE */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
+  .div-input {
+    display: flex;
+    flex-direction: column;
+  }
   .section-footer {
-    margin: 32px 16px;
+    width: 100%;
   }
   .contact-form {
     display: flex;
@@ -105,6 +128,6 @@
     width: 100px;
   }
   .link-footer {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
