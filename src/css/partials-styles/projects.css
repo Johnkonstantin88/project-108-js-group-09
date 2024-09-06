@@ -38,7 +38,7 @@
   letter-spacing: -0.03em;
   margin-bottom: 32px;
 }
-.btn-see-project {
+.see-project-link {
   border: none;
   border-radius: 60px;
   padding: 13px 32px;
@@ -49,7 +49,7 @@
   color: var(--white);
   transition: background-color var(--timing-function);
 }
-.btn-see-project:hover {
+.see-project-link {
   background-color: #e0373f;
 }
 .wrap-project-img {
@@ -81,7 +81,25 @@
   height: 52px;
   background-color: transparent;
 }
-
+.icon-swiper-prev,
+.icon-swiper-next {
+  stroke: rgba(250, 250, 250, 0.5);
+  fill: transparent;
+}
+.icon-swiper-next {
+  rotate: 180deg;
+}
+.swiper-button-disabled {
+  border: 1px solid rgba(250, 250, 250, 0.1);
+}
+.swiper-button-disabled .icon-swiper-prev {
+  stroke: rgba(250, 250, 250, 0.2);
+  fill: transparent;
+}
+.swiper-button-disabled .icon-swiper-next {
+  stroke: rgba(250, 250, 250, 0.2);
+  fill: transparent;
+}
 /* ========================================================================================================================================================
 tablet
 ======================================================================================================================================================== */
