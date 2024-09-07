@@ -19,6 +19,7 @@
     background-image: url(../img/covers/elements_vectors.png);
     background-position: center;
     overflow: hidden;
+    margin-bottom: 64px;
 }
 
 .covers-list {
@@ -58,6 +59,7 @@
 @media screen and (min-width: 768px) {
     .covers-section {
         max-height: 960px;
+        margin-bottom: 96px;
     }
 
     .covers-list-item {
@@ -89,6 +91,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+
+    .covers-section {
+        margin-bottom: 164px;
+    }
 
     @keyframes inViewport {
         0% {
