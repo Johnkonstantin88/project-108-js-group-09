@@ -1,6 +1,5 @@
 .benefits-section {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 64px;
   margin: 0;
 }
 
@@ -63,7 +62,6 @@
 }
 .benefist-button:hover,
 .benefist-button:focus {
-  
   border-color: #fafafa;
 }
 
@@ -80,12 +78,11 @@
   } */
 
   .benefits-section {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-bottom: 96px;
   }
 
   .benefist-button {
-    margin-bottom: 64px;
+    margin-top: 64px;
   }
 
   .benefist-menu {
@@ -106,8 +103,7 @@
   } */
 
   .benefits-section {
-    padding-top: 82px;
-    padding-bottom: 82px;
+    padding-bottom: 164px;
   }
 
   .benefits-container {
@@ -115,6 +111,7 @@
     justify-content: space-between;
   }
 
+  
 
 }
 /*=================================== DESKTOP STYLE FINISH ==================*/
