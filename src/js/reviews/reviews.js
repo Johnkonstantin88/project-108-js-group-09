@@ -18,7 +18,7 @@ const getCardInfo = async () => {
       color: 'red',
       position: 'topRight',
     });
-    reviewsList.innerHTML = `<li class="error-case">Not Found</li>`;
+    reviewsList.innerHTML = `<li class="error-case">Unfortunately we can't find any reviews try again later</li>`;
   }
 };
 getCardInfo();

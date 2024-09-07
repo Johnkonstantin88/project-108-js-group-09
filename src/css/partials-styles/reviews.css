@@ -36,9 +36,9 @@
 .reviews-btn {
   border: 1px solid rgba(250, 250, 250, 0.5);
   border-radius: 60px;
-  padding: 18px;
-  width: 68px;
-  height: 68px;
+  padding: 14px;
+  width: 52px;
+  height: 52px;
   justify-content: center;
   background-color: inherit;
 }
@@ -47,6 +47,7 @@
   display: flex;
   gap: 20px;
   justify-content: center;
+  align-items: center;
 }
 
 .reviews-list-item-text {
@@ -66,17 +67,29 @@
   overflow: hidden;
 }
 
+.review-icon {
+  width: 24px;
+  height: 24px;
+}
+
 .error-case {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
   margin-top: 100px;
   font-size: large;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
 }
 
 .prev-icon,
 .next-icon {
-  stroke: rgba(250, 250, 250, 0.5);
+  stroke-width: 2px;
+  stroke: #fafafa;
   fill: transparent;
 }
 
@@ -88,18 +101,28 @@
 }
 
 .swiper-button-disabled .next-icon {
-  stroke: rgba(250, 250, 250, 0.2);
+  stroke: #3b3b3b;
   fill: transparent;
 }
 
 .swiper-button-disabled .prev-icon {
-  stroke: rgba(250, 250, 250, 0.2);
+  stroke: #3b3b3b;
   fill: transparent;
 }
 
 @media screen and (min-width: 768px) {
   .reviews-section {
     padding-bottom: 96px;
+  }
+
+  .reviews-btn {
+    padding: 18px;
+    width: 68px;
+    height: 68px;
+  }
+  .review-icon {
+    width: 32px;
+    height: 32px;
   }
 }
 
