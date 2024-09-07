@@ -65,15 +65,10 @@
   justify-content: center;
   gap: 12px;
 }
-.swiper-projects-button-prev {
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  border-radius: 60px;
-  padding: 14px;
-  width: 52px;
-  height: 52px;
-  background-color: transparent;
-}
-.swiper-projects-button-next {
+.swiper-projects-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
   padding: 14px;
@@ -83,14 +78,14 @@
 }
 .icon-swiper-prev,
 .icon-swiper-next {
-  stroke: rgba(250, 250, 250, 0.5);
+  stroke: rgba(250, 250, 250, 0.9);
   fill: transparent;
 }
 .icon-swiper-next {
   rotate: 180deg;
 }
 .swiper-button-disabled {
-  border: 1px solid rgba(250, 250, 250, 0.1);
+  border: 1px solid rgba(250, 250, 250, 0.2);
 }
 .swiper-button-disabled .icon-swiper-prev {
   stroke: rgba(250, 250, 250, 0.2);
@@ -120,7 +115,7 @@ tablet
     width: 300px;
     margin-bottom: 50px;
   }
-  .btn-see-project {
+  .see-project-link {
     padding: 18px 50px;
     width: 177px;
     height: 55px;
@@ -132,15 +127,14 @@ tablet
   .wrap-btn-projects {
     gap: 20px;
   }
-  .btn-projects-left {
-    padding: 18px;
+  .swiper-projects-button {
     width: 68px;
     height: 68px;
   }
-  .btn-projects-right {
-    padding: 18px;
-    width: 68px;
-    height: 68px;
+  .icon-swiper-prev,
+  .icon-swiper-next {
+    height: 32px;
+    width: 32px;
   }
 }
 /* ========================================================================================================================================================
