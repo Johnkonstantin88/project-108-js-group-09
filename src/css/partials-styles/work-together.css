@@ -1,4 +1,8 @@
 /* Базові стилі для футера */
+.footer {
+  display: flex;
+  /* justify-content: center; */
+}
 .section-footer {
   display: flex;
   flex-direction: column;
@@ -31,7 +35,7 @@
 .contact-form {
   display: flex;
   flex-direction: row;
-  gap: 32px;
+  gap: 64px;
 }
 .div-input {
   display: flex;
@@ -63,6 +67,8 @@
   border-radius: 50%;
   height: 150px;
   width: 150px;
+  position: relative;
+  bottom: 40px;
 }
 .send-btn:hover {
   background-color: #e0373f;
@@ -78,11 +84,15 @@
   padding: 5px 15px;
   border-radius: 20px;
 }
+.link-footer {
+  font-size: 16px;
+}
 /* TABLET */
 @media screen and(max-width: 767px) {
   .contact-form {
     display: flex;
     flex-direction: row;
+    /* justify-content: start; */
     gap: 32px;
   }
   .div-input {
@@ -92,10 +102,16 @@
   }
 }
 @media screen and(max-width: 1441px) {
+  /* .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  } */
   .contact-form {
     display: flex;
     flex-direction: row;
-    gap: 64px;
+    /* justify-content: center; */
+    /* gap: 64px; */
   }
   .div-input {
     display: flex;
@@ -105,6 +121,11 @@
 }
 /* MOBILE */
 @media screen and (max-width: 376px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .div-input {
     display: flex;
     flex-direction: column;
@@ -124,6 +145,8 @@
   .send-btn {
     height: 100px;
     width: 100px;
+    position: relative;
+    bottom: 0;
   }
   .link-footer {
     font-size: 13px;
