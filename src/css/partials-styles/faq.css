@@ -7,7 +7,7 @@
     /* border: 1px solid gray; */
 }
 
-ul {
+.faq-list {
     
     list-style-type: none;
     padding: 0;
@@ -61,6 +61,9 @@ ul {
     .faq-container {
         grid-template-columns: 1fr;
     }
+        .faq-list {
+            grid-template-columns: 1fr;
+        }
 
     .faq-item button {
         font-size: 14px;
@@ -70,6 +73,9 @@ ul {
 /* Phone (375px) */
 @media screen and (max-width: 375px) {
     .faq-container {
+        grid-template-columns: 1fr;
+    }
+    .faq-list{
         grid-template-columns: 1fr;
     }
 
