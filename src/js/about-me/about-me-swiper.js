@@ -28,10 +28,6 @@ const swiper = new Swiper('.hard-skills-swiper', {
     },
     slidesPerView: 1,
 
-    // autoplay: {
-    //     delay: 5000,
-    // },
-
     watchSlidesProgress: true,
     on: {
         transitionStart: () => {
@@ -48,7 +44,7 @@ const swiper = new Swiper('.hard-skills-swiper', {
     },
 
     breakpoints: {
-        220: {
+        320: {
             slidesPerView: 1,
             spaceBetween: 0,
         },
@@ -63,20 +59,8 @@ const swiper = new Swiper('.hard-skills-swiper', {
         },
 
         1440: {
-            // slidesPerGroup: 1,
-            // centerSlidesBounds: true,
-            // centerInsufficientSlides: true,
-            // centerSlides: true,
             slidesPerView: 6,
             spaceBetween: 0,
         },
     },
-
-    // freeMode: {
-    //     enabled: true,
-    //     sticky: true,
-    //     minimumVelocity: 0.02,
-    //     momentumBounceRatio: 1,
-    //     momentumVelocityRatio: 1,
-    // },
 });
