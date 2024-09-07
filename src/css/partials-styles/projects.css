@@ -1,5 +1,5 @@
 .projects {
-  margin-bottom: 64px;
+  padding-bottom: 64px;
 }
 .projects-titel {
   margin-bottom: 32px;
@@ -105,7 +105,7 @@ tablet
 ======================================================================================================================================================== */
 @media screen and (min-width: 768px) {
   .projects {
-    margin-bottom: 96px;
+    padding-bottom: 96px;
   }
   .wrap-projects {
     margin-bottom: 64px;
@@ -148,7 +148,7 @@ desktop
 ======================================================================================================================================================== */
 @media screen and (min-width: 1440px) {
   .projects {
-    margin-bottom: 164px;
+    padding-bottom: 164px;
   }
   .projects-list .projects-list-item {
     display: flex;
