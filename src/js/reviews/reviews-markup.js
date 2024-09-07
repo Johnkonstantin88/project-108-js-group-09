@@ -1,16 +1,17 @@
 export const createCardTemplate = cardInfo => {
+  const { avatar_url, author, review } = cardInfo;
   return `
  <li class="reviews-list-item swiper-slide">
           <img
-            src="${cardInfo.avatar_url}"
+            src="${avatar_url}"
             alt="user-photo"
             class="reviews-list-item-icon"
             width="48"
             height="48"
           />
-          <h3 class="reviews-list-item-title">${cardInfo.author}</h3>
+          <h3 class="reviews-list-item-title">${author}</h3>
           <p class="reviews-list-item-text">
-            ${cardInfo.review}
+            ${review}
           </p>
         </li>
   `;
