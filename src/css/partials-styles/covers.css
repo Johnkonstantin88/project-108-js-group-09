@@ -15,7 +15,7 @@
     position: relative;
     display: flex;
     max-height: 508px;
-    justify-content: center;
+    justify-content: start;
     background-image: url(../img/covers/elements_vectors.png);
     background-position: center;
     overflow: hidden;
@@ -43,16 +43,18 @@
 }
 
 @keyframes inViewport {
-    from {
-        transform: translateX(50%);
+    0% {
+        transform: translateX(0%);
     }
-
-    to {
+    50% {
         transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0%);
     }
 }
 
-/* TABLET 768 */
+/* MEDIA */
 @media screen and (min-width: 768px) {
     .covers-section {
         max-height: 960px;
@@ -71,15 +73,5 @@
     .covers-list {
         column-gap: 40px;
         margin-bottom: 40px;
-    }
-
-    @keyframes marqueeLine {
-        from {
-            transform: translateX(20%);
-        }
-
-        to {
-            transform: translateX(-20%);
-        }
     }
 }
