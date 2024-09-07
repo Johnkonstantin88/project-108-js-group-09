@@ -17,7 +17,7 @@ const swiper = new Swiper('.hard-skills-swiper', {
     modules: [Navigation, Autoplay, FreeMode, Mousewheel],
     direction: 'horizontal',
     loop: true,
-    speed: 400,
+    speed: 250,
     allowSlideNext: true,
     mousewheel: {
         enabled: true,
@@ -33,8 +33,25 @@ const swiper = new Swiper('.hard-skills-swiper', {
     // },
 
     watchSlidesProgress: true,
+    on: {
+        transitionStart: () => {
+            document.querySelectorAll('.hard-skills-item').forEach(slide => {
+                slide.style.backgroundColor = 'var(--black)';
+                slide.style.border = '1px solid rgba(250, 250, 250, 0.2)';
+                slide.style.borderRadius = '50%';
+            });
+
+            const firstSlide = swiper.slides[swiper.activeIndex];
+            firstSlide.style.backgroundColor = 'var(--red)';
+            firstSlide.style.border = 'none';
+        },
+    },
 
     breakpoints: {
+        220: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
         375: {
             slidesPerView: 2,
             spaceBetween: 0,
