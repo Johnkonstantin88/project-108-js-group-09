@@ -27,11 +27,25 @@
     color: #fafafa;
     background-color: #1a1a1a;
     border-collapse: collapse;
-        border: 1px solid gray;
+        border: 1px solid rgba(250, 250, 250, 0.2);
+}
+.icon-btn-faq{
+        stroke:#FAFAFA;
 }
 
 .faq-item p {
     margin: 0;
+}
+
+.toggle-btn{
+    background-color: transparent;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+        border-radius: 100px;
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        align-self: flex-end;
+        font-size: 16px;
 }
 
 .faq-content {
@@ -43,14 +57,14 @@
     color: rgba(250, 250, 250, 0.6);
 }
 
-.faq-item button {
+/* .faq-item button {
     align-self: flex-end;
     background-color: transparent;
     border: none;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
-}
+} */
 
 .faq-item button:hover {
     color: #ccc;
