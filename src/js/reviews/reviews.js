@@ -18,7 +18,27 @@ const getCardInfo = async () => {
       color: 'red',
       position: 'topRight',
     });
-    reviewsList.innerHTML = `<li class="error-case">Unfortunately we can't find any reviews try again later</li>`;
+    reviewsList.innerHTML = `<li class="error-case"> <picture>
+      <source
+      class="not-found-pic"
+      srcset="../img/reviews/not-found.jpg"
+        media="(min-width:1440px)"
+        width="640"
+        height="352"
+      />
+      <source
+        class="not-found-pic"
+        srcset="/img/reviews/not-found.jpg"
+        media="(min-width:768px)"
+        width="422"
+        height="232"
+      />
+      <img
+        class="not-found-pic"
+        src="/img/reviews/not-found-mob.jpg"
+        alt="vishivanka" width="270" height="207"
+      />
+    </picture></li>`;
   }
 };
 getCardInfo();

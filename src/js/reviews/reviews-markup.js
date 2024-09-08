@@ -3,8 +3,9 @@ export const createCardTemplate = cardInfo => {
   return `
  <li class="reviews-list-item swiper-slide">
           <img
-            src="${avatar_url}"
+            src="=${avatar_url}"
             alt="user-photo"
+            onerror="this.src='/img/reviews/profile-photo.png'"
             class="reviews-list-item-icon"
             width="48"
             height="48"

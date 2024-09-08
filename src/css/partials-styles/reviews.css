@@ -110,6 +110,11 @@
   fill: transparent;
 }
 
+.not-found-pic {
+  width: 640px;
+  height: 352px;
+}
+
 @media screen and (min-width: 768px) {
   .reviews-section {
     padding-bottom: 96px;
