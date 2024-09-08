@@ -1,15 +1,5 @@
-.hero-list :hover {
-    border: 1px solid #fafafa;
-    border-radius: 60px;
-}
-
 /* MOBILE ADAPTIVE */
 @media screen and (min-width: 375px) {
-    /* .container {
-        width: 375px;
-        margin-left: auto;
-        margin-right: auto;
-    } */
 
     .hero {
         background-image: url(../img/hero/mobile-hero.png);
@@ -24,6 +14,7 @@
             background-image: url(../img/hero/mobile-hero-2x.png);
         }
     }
+
 
     .hero-title {
         font-family: "Inter Tight",
@@ -41,44 +32,10 @@
         padding-bottom: 106px;
     }
 
-    .hero-list {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 4px;
-        padding-bottom: 32px;
-        padding-top: 106px;
-    }
-
-    .hero-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .hero-links {
-        border: 1px solid;
-        border-color: rgba(250, 250, 250, 0.2);
-        padding: 10px;
-        border-radius: 60px;
-        font-family: "Inter Tight",
-            sans-serif;
-        font-weight: 500;
-        font-size: 14px;
-        letter-spacing: -0.02em;
-        color: #fafafa;
-    }
-
 }
 
 /* TABLET */
 @media screen and (min-width: 768px) {
-    /* .container {
-        width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    } */
 
     .hero {
         background-image: url(../img/hero/tablet-hero.png);
@@ -104,49 +61,13 @@
         text-transform: uppercase;
         color: #fafafa;
         padding-top: 94px;
-        padding-left: 32px;
         padding-bottom: 94px;
     }
-
-    .hero-list {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: right;
-        gap: 8px;
-        padding-bottom: 32px;
-        padding-top: 94px;
-        right: 32px;
-    }
-
-    .hero-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .hero-links {
-        border: 1px solid rgba(250, 250, 250, 0.2);
-        border-radius: 60px;
-        padding: 18px 24px;
-        font-family: "Inter Tight",
-            sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        letter-spacing: -0.02em;
-        color: #fafafa;
-    }
-
 
 }
 
 /* DESKTOP 1440 */
 @media screen and (min-width: 1440px) {
-    /* .container {
-        width: 1440px;
-        padding-left: 32px;
-        padding-right: 32px;
-    } */
 
     .hero {
         background-image: url(../img/hero/hero-dek.png);
@@ -173,37 +94,81 @@
         color: #fafafa;
         margin: 0 auto;
         padding-top: 85px;
-        /* padding-left: 150px; */
+        max-width: 1084px;
     }
+}
 
-    .hero-list {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: right;
-        gap: 8px;
-        padding-bottom: 32px;
-        padding-top: 121px;
-        right: 32px;
+/* ----------fix----------------- */
+
+.hero-info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    padding-bottom: 32px;
+    padding-top: 94px;
+}
+
+.hero-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    color: var(--text);
+}
+
+.hero-item {
+    border-radius: 60px;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    transition: border-color 0.3s;
+}
+
+.hero-item:hover,
+.hero-item:focus,
+.hero-item:active {
+    border-color: var(--text);
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 34px;
+    min-height: 34px;
+}
+
+@media only screen and (min-width: 768px) {
+    .social-link {
+        min-width: 55px;
+        min-height: 55px;
     }
+}
 
-    .hero-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+.link-email {
+    border-radius: 60px;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    transition: border-color 0.3s;
+    color: var(--text);
+}
+
+.link-email:hover,
+.link-email:focus,
+.link-email:active {
+    border-color: var(--text);
+}
+
+.email-hero {
+    display: flex;
+    min-width: 178px;
+    min-height: 34px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .email-hero {
+        min-width: 223px;
+        min-height: 55px;
     }
-
-    .hero-links {
-        border: 1px solid rgba(250, 250, 250, 0.2);
-        border-radius: 60px;
-        padding: 18px;
-        font-family: "Inter Tight",
-            sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        letter-spacing: -0.02em;
-        color: #fafafa;
-    }
-
-
 }
