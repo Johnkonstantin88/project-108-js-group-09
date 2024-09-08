@@ -79,7 +79,7 @@
 .icon-swiper-prev,
 .icon-swiper-next {
   stroke-width: 2px;
-  stroke: rgba(250, 250, 250, 0.9);
+  stroke: #fafafa;
   fill: transparent;
 }
 .icon-swiper-next {
