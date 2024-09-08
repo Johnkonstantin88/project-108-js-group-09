@@ -24,10 +24,10 @@ const swiper = new Swiper('.hard-skills-swiper', {
         enabled: true,
         invert: true
     },
+
     navigation: {
         nextEl: '.swiper-button-next',
     },
-    slidesPerView: 1,
 
     keyboard: {
         enabled: true,
@@ -35,7 +35,8 @@ const swiper = new Swiper('.hard-skills-swiper', {
         pageUpDown: true,
     },
 
-    watchSlidesProgress: true,
+    slidesPerView: 1,
+
     on: {
         transitionStart: () => {
             document.querySelectorAll('.hard-skills-item').forEach(slide => {
