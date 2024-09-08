@@ -21,7 +21,7 @@
 
     @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
         .hero {
-            background-image: url(../img/hero/hero-2x.png);
+            background-image: url(../img/hero/mobile-hero-2x.png);
         }
     }
 
@@ -84,7 +84,7 @@
         background-image: url(../img/hero/tablet-hero.png);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 728px 900px;
+        background-size: cover;
         margin: 0 auto;
     }
 
@@ -137,9 +137,7 @@
         color: #fafafa;
     }
 
-    .hero-links-container {
-        right: 32px;
-    }
+
 }
 
 /* DESKTOP 1440 */
@@ -207,7 +205,5 @@
         color: #fafafa;
     }
 
-    .hero-links-container {
-        right: 32px;
-    }
+
 }
