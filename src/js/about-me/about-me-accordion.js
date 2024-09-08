@@ -90,7 +90,6 @@ const accordion = new Accordion('.accordion-container', {
     },
     onClose: (currentElement) => {
         changePaddingOnMobileAccordion(currentElement, '32px');
-        scrollDownInformationPanel(currentElement);
     },
 
 });
