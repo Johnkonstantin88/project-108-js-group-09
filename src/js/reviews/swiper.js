@@ -5,6 +5,7 @@ import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 
 export let swiper = new Swiper('.swiper-container', {
   modules: [Navigation, Keyboard, Mousewheel],
+  speed: 1000,
   navigation: {
     nextEl: '.review-swiper-button-next',
     prevEl: '.review-swiper-button-prev',
