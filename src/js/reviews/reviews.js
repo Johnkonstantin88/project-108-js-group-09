@@ -21,8 +21,9 @@ const getCardInfo = async () => {
     reviewsList.innerHTML = `<li class="error-case"> <picture>
       <source
       class="not-found-pic"
-      srcset="../img/reviews/not-found.jpg"
+      srcset="/img/reviews/not-found.jpg"
         media="(min-width:1440px)"
+        alt="not-found-photo"
         width="640"
         height="352"
       />
@@ -30,13 +31,14 @@ const getCardInfo = async () => {
         class="not-found-pic"
         srcset="/img/reviews/not-found.jpg"
         media="(min-width:768px)"
+        alt="not-found-photo"
         width="422"
         height="232"
       />
       <img
         class="not-found-pic"
         src="/img/reviews/not-found-mob.jpg"
-        alt="vishivanka" width="270" height="207"
+        alt="not-found-photo" width="270" height="207"
       />
     </picture></li>`;
   }
