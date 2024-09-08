@@ -172,21 +172,28 @@ body .information-item .ac-panel .ac-text {
     border: none;
 }
 
-.swiper-button-next {
+.hard-skills-container>.hard-skills-navigation-button {
     position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
     border-radius: 50%;
     z-index: 999;
+    margin-top: 0;
+}
+.hard-skills-container>.hard-skills-navigation-button::after{
+    content: none;
 }
 
-.arrow-right{
+.hard-skills-navigation-button .arrow-right{
     width: 20px;
     height: 20px;
+    stroke: var(--dark-light);
+    fill: transparent;
+    rotate: 180deg;
 }
 
-.swiper-button-next button {
+.hard-skills-navigation-button button {
     background: none;
     padding: 0;
     border: none;
@@ -217,8 +224,7 @@ body .information-item .ac-panel .ac-text {
         max-width: 260px;
         height: 130px;
     }
-    .arrow-right {
-        stroke: var(--white);
+    .hard-skills-navigation-button .arrow-right {
         width: 28px;
         height: 28px;
     }
@@ -268,7 +274,7 @@ body .information-item .ac-panel .ac-text {
         height: 200px;
     }
 
-    .arrow-right {
+    .hard-skills-navigation-button .arrow-right {
         width: 40px;
         height: 40px;
     }
@@ -295,7 +301,7 @@ body .information-item .ac-panel .ac-text {
     .hard-skills-container {
         max-width: 1200px;
     }
-    .swiper-button-next {
+    .hard-skills-navigation-button{
         right: 32px;
     }
     .hard-skills-container-wrapper{
