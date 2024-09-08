@@ -8,7 +8,7 @@
 .faq-list {
   list-style-type: none;
   padding: 0;
-  width: 1440px;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
