@@ -88,7 +88,7 @@ body .information-item .information-item-button{
     background-color: var(--black);
 }
 
-body .information-item .ac-panel .ac-text {
+body .information-item .ac-panel .description-list {
     color: var(--white);
     background-color: var(--black);
     padding: 12px 0 0 0;
@@ -106,6 +106,10 @@ body .information-item .ac-panel .ac-text {
 
 .information-container .ac.is-active>.ac-header .information-item-button::after {
     content: ""; 
+}
+
+.information-item:first-child .ac-panel .description-list{
+    gap: 32px;
 }
 
 .information-container{
@@ -273,6 +277,10 @@ body .information-item .ac-panel .ac-text {
             padding: 0 59px 16px 0;
     }
 
+    .information-item:first-child .ac-panel .description-list {
+        gap: 16px;
+    }
+
     .description-open-icon {
         width: 40px;
         height: 40px;
@@ -329,6 +337,9 @@ body .information-item .ac-panel .ac-text {
         width: 612px;
         margin-left: auto;
     }
+    .information-item:first-child .ac-panel .description-list {
+        gap: 32px;
+    }
 
     /*------------------Third part---------------------- */
 
@@ -339,7 +350,7 @@ body .information-item .ac-panel .ac-text {
     .hard-skills-navigation-button{
         right: 32px;
     }
-    
+
     .hard-skills-container-wrapper{
         padding: 0 32px 0 32px;
     }
