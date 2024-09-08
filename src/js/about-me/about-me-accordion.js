@@ -2,6 +2,7 @@ import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 import pathSprite from '../../img/sprite.svg';
 
+const tabletViewport = 768;
 const informationListEl = document.querySelector(".information-container");
 const informationData = [
     {
@@ -20,12 +21,12 @@ const informationData = [
             "2020 - 2022 / Advanced Blender Animation Techniques, Udemy"]
     }
 ];
+
 const renderListDescription = (items) => {
     return items.map(item =>
         `<li class="information-description-item">${item}</li>`
     ).join("");
 }
-
 
 const renderContentAccordion = (data) => {
     const markup = data.map(item =>
@@ -51,7 +52,6 @@ const changeStyleAccordionTriggerBtn = () => {
     });
 }
 
-
 const scrollDownInformationPanel = (currentElement) => {
     const elementRect = currentElement.getBoundingClientRect();
     const elementY = elementRect.top;
@@ -64,18 +64,37 @@ const scrollDownInformationPanel = (currentElement) => {
 
 };
 
+const changePaddingOnMobileAccordion = (currentElement, paddingValue) => {
+    if (window.innerWidth < tabletViewport) {
+        currentElement.style.paddingBottom = paddingValue;
+    }
+}
+
+const onInitAccordion = () => {
+    console.log('Accordion initialized');
+    const firstInformationItemEl = document.querySelector('.information-item');
+    changePaddingOnMobileAccordion(firstInformationItemEl, '20px');
+};
+
 
 renderContentAccordion(informationData);
 
 const accordion = new Accordion('.accordion-container', {
-    duration: 250,
+    duration: 500,
     showMultiple: true,
     openOnInit: [0],
     triggerClass: "information-item-button",
-    onOpen: function (currentElement) {
+    onOpen: (currentElement) => {
+        changePaddingOnMobileAccordion(currentElement, '20px');
         scrollDownInformationPanel(currentElement);
-    }
+    },
+    onClose: (currentElement) => {
+        changePaddingOnMobileAccordion(currentElement, '32px');
+    },
+
 });
+
+onInitAccordion();
 
 changeStyleAccordionTriggerBtn();
 
