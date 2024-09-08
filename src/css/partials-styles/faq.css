@@ -60,15 +60,13 @@
   color: rgba(250, 250, 250, 0.6);
 }
 .toggle-btn svg {
-  transition: transform 0.3s ease; /* Анимация вращения */
+  transition: transform 0.3s ease;
 }
 
 .toggle-btn.rotated svg {
-  transform: rotate(180deg); /* Вращение на 180 градусов */
+  transform: rotate(180deg);
 }
-.information-container .ac.is-active > .ac-header .description-open-icon {
-  transform: translateY(-50%) rotate(180deg);
-}
+
 /* Tablet (768px) */
 @media screen and (max-width: 768px) {
   .faq-list {
