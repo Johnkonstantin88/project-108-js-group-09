@@ -42,7 +42,6 @@ const swiper = new Swiper('.hard-skills-swiper', {
                 slide.style.transition = 'background-color 100ms cubic-bezier(0.4, 0, 0.2, 1)';
                 slide.style.backgroundColor = 'var(--black)';
                 slide.style.border = '1px solid rgba(250, 250, 250, 0.2)';
-                slide.style.backgroundColor = 'transparent';
                 slide.style.borderRadius = '50%';
             });
 
