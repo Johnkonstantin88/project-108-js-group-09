@@ -13,7 +13,7 @@ function handleIntersection(entries) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       coversList.forEach(item => {
-        item.style.animationDuration = '10s';
+        item.style.animationDuration = '20s';
       });
     } else {
       coversList.forEach(item => {

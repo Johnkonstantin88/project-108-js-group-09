@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Autoplay, FreeMode, Navigation, Mousewheel } from 'swiper/modules';
+import { Navigation, Mousewheel, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 
 const hardSkillsArray = ["HTML/CSS", "JavaScript", "React", "Node.js", "React Native", "Soft skills", "Redux"];
@@ -14,7 +14,7 @@ const renderContentHardSkills = () => {
 renderContentHardSkills();
 
 const swiper = new Swiper('.hard-skills-swiper', {
-    modules: [Navigation, Autoplay, FreeMode, Mousewheel],
+    modules: [Navigation, Mousewheel, Keyboard],
     direction: 'horizontal',
     loop: true,
     speed: 250,
@@ -27,6 +27,12 @@ const swiper = new Swiper('.hard-skills-swiper', {
         nextEl: '.swiper-button-next',
     },
     slidesPerView: 1,
+
+    keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true,
+    },
 
     watchSlidesProgress: true,
     on: {
