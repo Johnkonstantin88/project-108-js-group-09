@@ -192,8 +192,12 @@ body .information-item .ac-panel .ac-text {
     fill: transparent;
     rotate: 180deg;
 }
+.hard-skills-navigation-button-next:hover .arrow-right,
+.hard-skills-navigation-button-next:focus .arrow-right {
+    stroke: var(--white);
+}
 
-.hard-skills-navigation-button button {
+.hard-skills-navigation-button-next {
     background: none;
     padding: 0;
     border: none;
@@ -205,7 +209,6 @@ body .information-item .ac-panel .ac-text {
 
 .hard-skills-item {
     padding: 20px;
-    transition: background-color var(--timing-function);
 }
 .hard-skills-text{
     font-size: 16px;
