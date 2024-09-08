@@ -12,7 +12,7 @@
 }
 
 .covers-section {
-    background-image: url(../img/covers/elements_vectors.png);
+    background-image: url(../img/covers/vectors@1x.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -92,5 +92,19 @@
 @media screen and (min-width: 1440px) {
     .covers-section {
         margin-bottom: 164px;
+    }
+}
+
+@media
+
+/* only for retina displays */
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    .covers-section {
+        background-image: url(../img/covers/vectors@2x.png);
     }
 }
