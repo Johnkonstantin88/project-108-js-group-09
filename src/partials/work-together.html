@@ -1,10 +1,35 @@
 <section class="work-together" id="work-together">
     <div class="container work-container">
         <div class="work-wrap">
-    <img class="work-img" src="/img/header/man.png" alt="avatar Lloyd">
+            <picture>
+                <source
+                  srcset="/img/work-together/man-tablet.jpg 1x
+                    /img/work-together/man-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  width="70"
+                  height="70"
+                />
+                <source
+                  srcset="
+                  /img/work-together/man-mobile.jpg    1x,
+                  /img/work-together/man-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                  width="44"
+                  height="44"
+                />
+
+                <img
+                  class="work-img"
+                  src="/img/work-together/man-mobile.jpg"
+                  alt="avatar Lloyd"
+                  width="44"
+                  height="44"
+                />
+              </picture>
     <h2 class="work-title">Let's <span class="text-red">work</span><br> <span class="text-under">together</span></h2>
 </div>
-<!-- <p class="work-title text-title">together</p> -->
     <form class="work-form">
         <label class="form-label">
             <input id="input-email" class="form-input" type="text" name="email" placeholder="clients@gmail.com">
