@@ -46,11 +46,20 @@
 }
 
 .faq-list > .faq-item {
-  border: none;
-  border-top: 1px solid rgba(250, 250, 250, 0.2);
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  /* border: none; */
+  /* border-top: 1px solid rgba(250, 250, 250, 0.2);
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  border-left: none;
+  border-right: none; */
+}
+.faq-list > .faq-item:nth-child(odd) {
+  border-left: none;
 }
 
+.faq-list > .faq-item.faq-item:nth-child(2n) {
+  border-right: none;
+}
 .faq-item p {
   margin: 0;
 }
