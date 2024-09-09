@@ -199,12 +199,6 @@
     
     /* <!-- ===========================  BACKDROP  ==================================== --> */
 
-
-    .backdrop.is-open {
-        opacity: 1;
-        visibility: visible;
-        pointer-events: all;
-    }
     .backdrop {
         position: fixed;
         top: 0;
@@ -219,6 +213,13 @@
         transition: opacity var(--timing-function);
     
     }
+
+.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+
     .modal {
         position: absolute;
         top: 50%;
