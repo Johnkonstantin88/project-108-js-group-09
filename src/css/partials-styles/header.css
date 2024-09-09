@@ -1,4 +1,4 @@
-/* =============== HEADER ================== */
+/* ====================== HEADER ====================== */
 .hidden {
   display: none;
 }
@@ -58,7 +58,7 @@
 .header-menu:hover {
   color: var(--red);
 }
-/* =================== MOBILE MENU ==================== */
+/* ===================== MOBILE MENU ===================== */
 .mobile-menu-close {
   background: transparent;
   outline: none;

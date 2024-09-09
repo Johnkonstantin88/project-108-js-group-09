@@ -1,6 +1,6 @@
 .benefits-section {
   padding-bottom: 64px;
-  margin: 0;
+  
 }
 
 
@@ -20,6 +20,7 @@
   flex-direction: column;
   gap: 16px;
 }
+
 .benefist-item {
   border-radius: 20px;
   padding: 24px;
@@ -58,6 +59,8 @@
   padding: 18px 36px;
   margin-top: 32px;
 
+  text-align: center;
+  line-height: normal;
 
 }
 .benefist-button:hover,
@@ -71,11 +74,6 @@
 }
 /*=================================== TABLES STYLE 768 START ==================*/
 @media screen and (min-width: 768px) {
-  /* .container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  } */
 
   .benefits-section {
     padding-bottom: 96px;
@@ -98,9 +96,6 @@
 
 /*=================================== DESKTOP STYLE 1440 START==================*/
 @media screen and (min-width: 1440px) {
-  /* .container {
-    max-width: 1440px;
-  } */
 
   .benefits-section {
     padding-bottom: 164px;
@@ -111,7 +106,10 @@
     justify-content: space-between;
   }
 
+  .benefits-title {
+  margin: 0;
   
+}
 
 }
 /*=================================== DESKTOP STYLE FINISH ==================*/
