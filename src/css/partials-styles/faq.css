@@ -1,3 +1,9 @@
+.faq-section {
+}
+
+.faq-container-faq {
+}
+
 .faq-container {
   width: 100%;
   gap: 20px;
@@ -15,11 +21,12 @@
 }
 
 .faq-list {
+  margin: 0;
   list-style-type: none;
   padding: 0;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
 }
 
 .faq-item {
@@ -55,9 +62,7 @@
   width: 36px;
   height: 36px;
   stroke: #fafafa;
-
   text-align: center;
-
   transition: transform var(--timing-function);
 }
 
@@ -89,9 +94,15 @@
 }
 
 /* Phone (375px) */
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 1440px) {
+  .faq-section {
+    padding-bottom: 164px;
+  }
+
   .faq-list {
-    grid-template-columns: 1fr;
+    margin: 0;
+    width: 1440px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .faq-item {
