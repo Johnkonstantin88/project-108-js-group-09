@@ -1,9 +1,9 @@
-.faq-section{
+.faq-section {
   padding-bottom: 64px;
   background-color: var(--black);
 }
 
-.faq-title{
+.faq-title {
   margin-bottom: 32px;
   font-weight: 600;
   font-size: 16px;
@@ -38,7 +38,7 @@ body .faq-item .faq-item-button {
   padding: 0 59px 16px 0;
 }
 
-body .ac .faq-item-button:focus{
+body .ac .faq-item-button:focus {
   color: var(--white);
 }
 
@@ -122,12 +122,12 @@ body .ac .faq-item-button:focus{
   .faq-section {
     padding-bottom: 164px;
   }
-  
+
   .faq-list {
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   .faq-list>.faq-item {
     width: calc(100% / 2);
     padding-top: 32px;
