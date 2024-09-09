@@ -203,6 +203,7 @@
     .backdrop.is-open {
         opacity: 1;
         visibility: visible;
+        pointer-events: all;
     }
     .backdrop {
         position: fixed;
