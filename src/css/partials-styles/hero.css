@@ -7,12 +7,15 @@
         background-position: center;
         background-size: cover;
         margin: 0 auto;
+        padding-bottom: 32px;
+        padding-top: 281px;
     }
 
     @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
         .hero {
             background-image: url(../img/hero/mobile-hero-2x.png);
         }
+
     }
 
 
@@ -26,10 +29,7 @@
         text-transform: uppercase;
         color: #fafafa;
         margin: 0 auto;
-        padding-top: 85px;
-        padding-left: 4px;
-        padding-right: 4px;
-        padding-bottom: 106px;
+        margin-bottom: 212px;
     }
 
 }
@@ -43,6 +43,8 @@
         background-position: center;
         background-size: cover;
         margin: 0 auto;
+        padding-top: 300px;
+        padding-bottom: 32px;
     }
 
     @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
@@ -60,8 +62,7 @@
         letter-spacing: -0.03em;
         text-transform: uppercase;
         color: #fafafa;
-        padding-top: 94px;
-        padding-bottom: 94px;
+        margin-bottom: 187px;
     }
 
 }
@@ -75,6 +76,8 @@
         background-position: center;
         background-size: cover;
         margin: 0 auto;
+        padding-top: 300px;
+        padding-bottom: 32px;
     }
 
     @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
@@ -93,8 +96,8 @@
         text-transform: uppercase;
         color: #fafafa;
         margin: 0 auto;
-        padding-top: 85px;
         max-width: 1084px;
+        margin-bottom: 243px;
     }
 }
 
@@ -106,8 +109,6 @@
     align-items: center;
     gap: 4px;
     font-size: 14px;
-    padding-bottom: 32px;
-    padding-top: 94px;
 }
 
 .hero-list {
@@ -149,13 +150,13 @@
     border-radius: 60px;
     border: 1px solid rgba(250, 250, 250, 0.2);
     transition: border-color 0.3s;
-    color: var(--text);
+    color: #fafafa;
 }
 
 .link-email:hover,
 .link-email:focus,
 .link-email:active {
-    border-color: var(--text);
+    border-color: #fafafa;
 }
 
 .email-hero {
