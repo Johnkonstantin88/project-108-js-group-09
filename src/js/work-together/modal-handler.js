@@ -1,4 +1,4 @@
-export const closeOptions = {
+export const modalCloseOptions = {
   onBind(instance) {
     this.handleCallback = onClose.bind(instance);
     document.addEventListener('keydown', this.handleCallback);
@@ -22,6 +22,26 @@ function onClose(e) {
 
   if (isCloseAction) {
     this.classList.remove('is-open');
-    closeOptions.onRemoveListener();
+    modalCloseOptions.onRemoveListener();
+    blockScrollOptions.enableScroll();
   }
 }
+
+export const blockScrollOptions = {
+  fixBlocks: document.querySelectorAll('[data-fix-block]'),
+  paddingOffset: `${window.innerWidth - document.body.offsetWidth}px`,
+
+  disableScroll() {
+    document.body.style.overflow = 'hidden';
+    this.fixBlocks.forEach(el => el.style.paddingRight - this.paddingOffset);
+    document.body.style.paddingRight = this.paddingOffset;
+  },
+
+  enableScroll() {
+    document.body.style.overflow = 'visible';
+    this.fixBlocks.forEach(el => {
+      el.style.paddingRight = '0px';
+    });
+    document.body.style.paddingRight = '0px';
+  },
+};
