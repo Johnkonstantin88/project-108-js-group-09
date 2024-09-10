@@ -15,6 +15,7 @@
 
 .reviews-section {
   padding-bottom: 64px;
+  padding-top: 64px;
 }
 
 .reviews-list-item {
@@ -113,6 +114,7 @@
 @media screen and (min-width: 768px) {
   .reviews-section {
     padding-bottom: 96px;
+    padding-top: 96px;
   }
 
   .reviews-btn {
@@ -129,5 +131,6 @@
 @media screen and (min-width: 1440px) {
   .reviews-section {
     padding-bottom: 164px;
+    padding-top: 164px;
   }
 }
