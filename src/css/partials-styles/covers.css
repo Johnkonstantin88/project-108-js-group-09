@@ -16,7 +16,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin-bottom: 64px;
 }
 
 .covers-container {
@@ -65,9 +64,6 @@
 
 /* MEDIA */
 @media screen and (min-width: 768px) {
-    .covers-section {
-        margin-bottom: 96px;
-    }
 
     .covers-container {
         max-height: 960px;
@@ -86,12 +82,6 @@
     .covers-list {
         column-gap: 60px;
         margin-bottom: 60px;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .covers-section {
-        margin-bottom: 164px;
     }
 }
 
