@@ -1,22 +1,20 @@
 export const closeOptions = {
-  handler: null,
-
   onBind(instance) {
-    this.handler = onClose.bind(instance);
-    document.addEventListener('keydown', this.handler);
+    this.handleCallback = onClose.bind(instance);
+    document.addEventListener('keydown', this.handleCallback);
   },
 
   onRemoveListener() {
-    document.removeEventListener('keydown', this.handler);
-    document.removeEventListener('click', this.handler);
+    document.removeEventListener('keydown', this.handleCallback);
+    document.removeEventListener('click', this.handleCallback);
   },
 
   onBackdropCLick() {
-    document.addEventListener('click', this.handler);
+    document.addEventListener('click', this.handleCallback);
   },
 };
 
-export function onClose(e) {
+function onClose(e) {
   const isCloseAction =
     e.code === 'Escape' ||
     e.target === this ||
