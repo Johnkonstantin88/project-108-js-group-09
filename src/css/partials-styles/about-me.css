@@ -73,6 +73,7 @@ body .information-item .information-item-button{
     color: rgba(250, 250, 250, 0.4);
     border: none;
     padding: 0 59px 12px 0; 
+    outline: none;
 }
 
 .information-container>.information-item{
@@ -332,6 +333,9 @@ body .information-item .ac-panel .description-list {
     }
 
     /*------------------Second part---------------------*/
+    body .information-item .information-item-button:focus {
+        outline: -webkit-focus-ring-color auto 1px;
+    }
 
     body .information-item .ac-panel{
         padding-right: 68px;
