@@ -4,13 +4,13 @@ export const closeOptions = {
     document.addEventListener('keydown', this.handleCallback);
   },
 
+  onBackdropCLick() {
+    document.addEventListener('click', this.handleCallback);
+  },
+
   onRemoveListener() {
     document.removeEventListener('keydown', this.handleCallback);
     document.removeEventListener('click', this.handleCallback);
-  },
-
-  onBackdropCLick() {
-    document.addEventListener('click', this.handleCallback);
   },
 };
 
