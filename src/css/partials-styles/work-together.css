@@ -25,6 +25,9 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
 }
+.text-red {
+  color: var(--red);
+}
 
 .text-under {
   display: block;
@@ -127,6 +130,12 @@
   border-color: var(--white);
 }
 
+
+@media screen and (max-width: 375px) {
+  .work-item {
+    font-size: 13px;
+  }
+}
 @media screen and (min-width: 768px) {
   .work-together {
     padding-top: 48px;
