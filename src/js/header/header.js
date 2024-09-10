@@ -11,18 +11,16 @@ const menuOpen = () => {
 };
 btnList.addEventListener('click', menuOpen);
 
-if (innerWidth < 768) {
-  btnBurger.addEventListener('click', () => {
-    mobile.classList.add('is-open');
-  });
+btnBurger.addEventListener('click', () => {
+  mobile.classList.add('is-open');
+});
 
-  const mobileMenuClose = () => {
-    mobile.classList.remove('is-open');
-  };
+const mobileMenuClose = () => {
+  mobile.classList.remove('is-open');
+};
 
-  btnClose.addEventListener('click', mobileMenuClose);
-  mobileListItem.forEach(listItem => {
-    listItem.addEventListener('click', mobileMenuClose);
-  });
-  btnMobile.addEventListener('click', mobileMenuClose);
-}
+btnClose.addEventListener('click', mobileMenuClose);
+mobileListItem.forEach(listItem => {
+  listItem.addEventListener('click', mobileMenuClose);
+});
+btnMobile.addEventListener('click', mobileMenuClose);

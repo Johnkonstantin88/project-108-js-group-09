@@ -49,11 +49,10 @@
   letter-spacing: -0.02em;
   color: var(--white);
 
-  padding: 4px;
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: underline;
-  padding: 10px;
+  padding: 12px;
 }
 .header-menu:hover {
   color: var(--red);
@@ -175,6 +174,7 @@
     flex-direction: column;
     align-items: center;
     width: 67px;
+    margin: 0 auto;
   }
   .header-list.open-js {
     max-height: 100px;
