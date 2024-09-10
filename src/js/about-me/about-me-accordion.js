@@ -71,7 +71,6 @@ const changePaddingOnMobileAccordion = (currentElement, paddingValue) => {
 }
 
 const onInitAccordion = () => {
-    console.log('Accordion initialized');
     const firstInformationItemEl = document.querySelector('.information-item');
     changePaddingOnMobileAccordion(firstInformationItemEl, '20px');
 };
@@ -84,11 +83,11 @@ const accordion = new Accordion('.accordion-container', {
     showMultiple: true,
     openOnInit: [0],
     triggerClass: "information-item-button",
-    onOpen: (currentElement) => {
+    beforeOpen: (currentElement) => {
         changePaddingOnMobileAccordion(currentElement, '20px');
         scrollDownInformationPanel(currentElement);
     },
-    onClose: (currentElement) => {
+    beforeClose: (currentElement) => {
         changePaddingOnMobileAccordion(currentElement, '32px');
     },
 
