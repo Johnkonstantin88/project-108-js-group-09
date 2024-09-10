@@ -11,6 +11,7 @@
 
 .about-me-section {
     padding-bottom: 64px;
+    padding-top: 64px;
 }
 
 .presentation-container{
@@ -120,6 +121,7 @@ body .information-item .ac-panel .description-list {
 }
 
 .description-open-icon{
+    position: absolute;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 50%;
     padding: 9px;
@@ -128,7 +130,6 @@ body .information-item .ac-panel .description-list {
 
     text-align: center;
     transform: translateY(-50%);
-    position: absolute;
     top: 50%;
     right: 0px;
     transition: transform var(--timing-function);
@@ -321,7 +322,8 @@ body .information-item .ac-panel .description-list {
     /*------------------Fist part---------------------- */
 
     .about-me-section {
-        padding-bottom: 82px;
+        padding-bottom: 164px;
+        padding-top: 96px;
     }
 
     .presentation-container {
