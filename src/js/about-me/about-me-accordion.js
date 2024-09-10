@@ -80,7 +80,7 @@ renderContentAccordion(informationData);
 
 const accordion = new Accordion('.accordion-container', {
     duration: 500,
-    showMultiple: true,
+    showMultiple: false,
     openOnInit: [0],
     triggerClass: "information-item-button",
     beforeOpen: (currentElement) => {
