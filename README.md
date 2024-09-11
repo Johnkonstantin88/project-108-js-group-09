@@ -23,6 +23,6 @@ Aндрій (https://github.com/m9ta92) секція Covers
 
 ТЗ https://docs.google.com/spreadsheets/d/1azRSKj2AE0FayFVo_DkUqr6e6ZNelDiPhDzbWWYX3uc/edit?gid=0#gid=0
 
-Сайт адаптован під Mobile (375px), Tablet (768px), Dekstop (1280px та 1440px), а токож гумова верстка (320px-374px)
+Сайт адаптован під Mobile (375px), Tablet (768px), Dekstop (1440px), а токож гумова верстка (320px-374px)
 
 Жива сторінка https://johnkonstantin88.github.io/project-108-js-group-09/

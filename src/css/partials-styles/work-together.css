@@ -64,30 +64,6 @@
   border-bottom-color: var(--white);
 }
 
-#input-email.success {
-  border-bottom-color: green;
-}
-
-#input-email.error {
-  border-bottom-color: red;
-}
-
-#input-message {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.2;
-  letter-spacing: -0.03em;
-  margin-top: 4px;
-}
-
-#input-message.success {
-  color: green;
-}
-
-#input-message.error {
-  color: red;
-}
-
 .form-btn {
   margin-top: 16px;
   border-radius: 100%;
@@ -107,7 +83,7 @@
   background-color: #e0373f;
 }
 
-.work-link {
+.work-list {
   display: flex;
   gap: 4px;
 }
@@ -115,10 +91,14 @@
 .work-item {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
-  padding: 10px 12px;
   font-size: 14px;
   letter-spacing: -0.02em;
   transition: border-color var(--timing-function);
+}
+
+.work-link {
+  display: block;
+  padding: 10px 12px;
 }
 
 .work-item:hover,
@@ -127,9 +107,9 @@
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 374px) {
   .work-item {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -154,12 +134,16 @@
     width: 150px;
     height: 150px;
   }
-  .work-link {
+  .work-list {
     gap: 8px;
   }
   .work-item {
-    padding: 18px 32px;
     font-size: 16px;
+  }
+
+  .work-link {
+    display: block;
+    padding: 18px 32px;
   }
   .work-wrap {
     gap: 20px;
