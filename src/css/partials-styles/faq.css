@@ -35,6 +35,7 @@ body .faq-item .faq-item-button {
   font-family: 'Inter Tight', sans-serif;
   border: none;
   padding: 0 59px 16px 0;
+  outline: none;
 }
 
 body .ac .faq-item-button:focus {
@@ -86,7 +87,7 @@ body .ac .faq-item-button:focus {
 }
 
 /* Tablet (768px) */
-@media screen and (min-width: 768px) {
+@media only screen and (orientation: landscape) and (min-width: 768px) {
   .faq-section {
     padding-bottom: 96px;
   }
@@ -104,6 +105,10 @@ body .ac .faq-item-button:focus {
     padding-bottom: 26px;
   }
 
+  body .faq-item .faq-item-button:focus-visible {
+    outline: -webkit-focus-ring-color auto 1px; 
+  }
+
   .icon-btn-faq {
     top: 36px;
   }
@@ -113,7 +118,7 @@ body .ac .faq-item-button:focus {
   }
 }
 /* Desktop (1440px) */
-@media screen and (min-width: 1440px) {
+@media only screen and (orientation: landscape) and (min-width: 1440px) {
   .faq-section {
     padding-bottom: 164px;
   }

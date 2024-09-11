@@ -134,7 +134,7 @@
   margin-bottom: 12px;
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (orientation: landscape) and (min-width: 768px) {
   .hidden {
     display: inline-block;
     position: relative;
@@ -204,7 +204,7 @@
     display: none;
   }
 }
-@media screen and (min-width: 1440px) {
+@media only screen and (orientation: landscape) and (min-width: 1440px) {
   .header-container {
     max-width: 1340px;
   }

@@ -63,7 +63,7 @@
 }
 
 /* MEDIA */
-@media screen and (min-width: 768px) {
+@media only screen and (orientation: landscape) and (min-width: 768px) {
 
     .covers-container {
         max-height: 960px;

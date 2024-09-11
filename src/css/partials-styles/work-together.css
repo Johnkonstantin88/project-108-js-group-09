@@ -112,7 +112,7 @@
     font-size: 12px;
   }
 }
-@media screen and (min-width: 768px) {
+@media only screen and (orientation: landscape) and  (min-width: 768px) {
   .work-container {
     padding-top: 80px;
     padding-bottom: 169px;
@@ -157,7 +157,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media only screen and (orientation: landscape) and  (min-width: 1440px) {
   .work-container {
     padding: 80px 194px 169px 196px;
   }
@@ -239,7 +239,7 @@
   color: rgba(250, 250, 250, 0.6);
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (orientation: landscape) and (min-width: 768px) {
   .modal {
     width: 494px;
     height: 246px;

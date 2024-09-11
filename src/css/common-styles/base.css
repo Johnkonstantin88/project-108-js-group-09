@@ -26,7 +26,7 @@ body {
 }
 
 /* MOBILE ADAPTIVE */
-@media screen and (min-width: 375px) {
+@media  screen and (min-width: 375px) {
   .container {
     width: 375px;
     margin-left: auto;
@@ -35,7 +35,7 @@ body {
 }
 
 /* TABLET */
-@media screen and (min-width: 768px) {
+@media only screen and (orientation: landscape) and (min-width: 768px) {
   .container {
     width: 768px;
     padding-left: 32px;
@@ -44,7 +44,7 @@ body {
 }
 
 /* DESKTOP 1440 */
-@media screen and (min-width: 1440px) {
+@media only screen and (orientation: landscape) and  (min-width: 1440px) {
   .container {
     width: 1440px;
     padding-left: 32px;

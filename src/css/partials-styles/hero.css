@@ -80,7 +80,7 @@
 }
 
 /* ----- TABLET ----- */
-@media screen and (min-width: 768px) {
+@media only screen and (orientation: landscape) and (min-width: 768px) {
   .hero {
     background-image: url(/img/hero/hero-tablet.png);
     padding-top: 300px;
@@ -127,7 +127,7 @@
 }
 
 /* ----- DESKTOP ----- */
-@media screen and (min-width: 1440px) {
+@media only screen and (orientation: landscape) and (min-width: 1440px) {
   .hero {
     background-image: url(/img/hero/hero-desk.png);
   }

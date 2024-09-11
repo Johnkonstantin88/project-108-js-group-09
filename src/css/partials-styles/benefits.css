@@ -73,7 +73,7 @@
   color: #fafafa;
 }
 /*=================================== TABLES STYLE 768 START ==================*/
-@media screen and (min-width: 768px) {
+@media only screen and (orientation: landscape) and (min-width: 768px) {
 
   .benefits-section {
     padding-bottom: 96px;
@@ -95,7 +95,7 @@
 /*=================================== TABLES STYLE FINISH ==================*/
 
 /*=================================== DESKTOP STYLE 1440 START==================*/
-@media screen and (min-width: 1440px) {
+@media only screen and (orientation: landscape) and (min-width: 1440px) {
 
   .benefits-section {
     padding-bottom: 164px;
