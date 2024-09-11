@@ -2,7 +2,7 @@ import svgPath from '../../img/sprite.svg';
 
 export function markup(title, message) {
   return `<div class="modal">
-        <button class="modal-close-btn" data-modal-close={true}>
+        <button class="modal-close-btn" data-modal-close={true} aria-label="cloce modal">
             <svg class="modal-close-icon">
                 <use href="${svgPath}#close"></use>
             </svg>
