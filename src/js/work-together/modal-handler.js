@@ -23,11 +23,14 @@ function onClose(e) {
   if (isCloseAction) {
     this.classList.remove('is-open');
     modalCloseOptions.onRemoveListener();
-    blockScrollOptions.enableScroll();
+    scrollOptions.enableScroll();
+  }
+  if (e.code === 'Tab') {
+    return false;
   }
 }
 
-export const blockScrollOptions = {
+export const scrollOptions = {
   fixBlocks: document.querySelectorAll('[data-fix-block]'),
   paddingOffset: `${window.innerWidth - document.body.offsetWidth}px`,
 

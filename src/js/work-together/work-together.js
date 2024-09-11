@@ -3,7 +3,7 @@ import 'izitoast/dist/css/iziToast.min.css';
 
 import { markup } from './work-together-markup';
 import { getRequest } from './work-together-api';
-import { blockScrollOptions, modalCloseOptions } from './modal-handler';
+import { modalCloseOptions, scrollOptions } from './modal-handler';
 
 const form = document.querySelector('.work-form');
 const backdrop = document.querySelector('.backdrop');
@@ -15,6 +15,23 @@ async function onSubmit(e) {
 
   const { email, comments } = e.currentTarget.elements;
 
+  const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+  const regExp = new RegExp(emailPattern);
+  const validateEmail = regExp.test(email.value);
+  const validateComment = comments.value.length === 0;
+
+  if (!validateEmail) {
+    showError('❌ Email must be in format "clients@gmail.com".');
+
+    return;
+  }
+
+  if (validateComment) {
+    showError('❌ Please, enter something in "comments" field.');
+
+    return;
+  }
+
   const formData = {
     email: email.value,
     comment: comments.value,
@@ -24,18 +41,21 @@ async function onSubmit(e) {
     const { title, message } = await getRequest(formData);
 
     backdrop.classList.add('is-open');
+    scrollOptions.disableScroll();
     backdrop.innerHTML = markup(title, message);
 
-    blockScrollOptions.disableScroll();
     modalCloseOptions.onBind(backdrop);
     modalCloseOptions.onBackdropCLick();
 
     form.reset();
   } catch (error) {
-    console.log(error);
-    iziToast.error({
-      message: `❌ Oh no, something went wrong`,
-      position: 'topRight',
-    });
+    showError(`❌ ${error.response.data.message}`);
   }
+}
+
+function showError(message) {
+  iziToast.error({
+    message: `${message}`,
+    position: 'topRight',
+  });
 }
