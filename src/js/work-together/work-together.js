@@ -4,10 +4,12 @@ import 'izitoast/dist/css/iziToast.min.css';
 import { markup } from './work-together-markup';
 import { getRequest } from './work-together-api';
 import { modalCloseOptions, scrollOptions } from './modal-handler';
-
+import { clearInputError, inputErrorText } from './input-errors';
 
 const form = document.querySelector('.work-form');
 const backdrop = document.querySelector('.backdrop');
+const emailSpan = document.querySelector('#email-span');
+const commentSpan = document.querySelector('#comment-span');
 
 form.addEventListener('submit', onSubmit);
 
@@ -21,14 +23,21 @@ async function onSubmit(e) {
   const validateEmail = regExp.test(email.value);
   const validateComment = comments.value.length === 0;
 
-  if (!validateEmail) {
-    showError('❌ Email must be in format "clients@gmail.com".');
+  if (!validateEmail && validateComment) {
+    inputErrorText(email, emailSpan);
+    inputErrorText(comments, commentSpan);
+
+    return;
+  }
+
+  if (!validateEmail && !validateComment) {
+    inputErrorText(email, emailSpan);
 
     return;
   }
 
   if (validateComment) {
-    showError('❌ Please, enter something in "comments" field.');
+    inputErrorText(comments, commentSpan);
 
     return;
   }
@@ -49,6 +58,7 @@ async function onSubmit(e) {
     modalCloseOptions.onBackdropCLick();
 
     form.reset();
+    clearInputError(email, comments, emailSpan, commentSpan);
   } catch (error) {
     showError(`❌ ${error.response.data.message}`);
   }
@@ -60,5 +70,3 @@ function showError(message) {
     position: 'topRight',
   });
 }
-
-

@@ -37,6 +37,10 @@
   margin-bottom: 64px;
 }
 
+.form-label {
+  position: relative;
+}
+
 .form-input {
   background-color: transparent;
   border: none;
@@ -75,6 +79,40 @@
 
 .form-input:-webkit-autofill:hover {
   border-color: #fafafa;
+}
+
+.email-span {
+  position: absolute;
+  bottom: -18px;
+  right: 0;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--red);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.comment-span {
+  position: absolute;
+  bottom: -18px;
+  right: 0;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--red);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.form-input-error {
+  border-bottom-color: var(--red);
+  transition: border-bottom-color 0ms;
+}
+
+.form-input-error:focus,
+.form-input-error:hover {
+  border-bottom-color: var(--red);
 }
 
 .form-btn {
@@ -120,7 +158,6 @@
   border-color: var(--white);
 }
 
-
 @media screen and (max-width: 374px) {
   .work-item {
     font-size: 12px;
@@ -144,6 +181,12 @@
   }
   .form-input {
     width: 245px;
+  }
+  .email-span {
+    left: 0;
+  }
+  .comment-span {
+    left: 0;
   }
   .form-btn {
     margin-top: 0;
@@ -267,8 +310,6 @@
   }
 }
 
-
-
 /* =========== BTN UP ========== */
 
 #btn-up {
@@ -292,8 +333,8 @@
   border-color: var(--red);
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   #btn-up {
-  font-size: 22px;
+    font-size: 22px;
   }
 }
