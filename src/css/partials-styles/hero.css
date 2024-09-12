@@ -9,6 +9,13 @@
     margin-bottom: 64px;
 }
 
+.container-hero {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 212px;
+}
+
 @media screen and (min-resolution: 192dpi) {
     .hero {
         background-image: url(/img/hero/hero-mobile@2x.png);
@@ -27,7 +34,6 @@
     letter-spacing: -0.03em;
     text-transform: uppercase;
     text-align: left;
-    margin-bottom: 212px;
 }
 
 .hero-list {
@@ -95,9 +101,12 @@
         }
     }
 
+    .container-hero {
+        gap: 187px;
+    }
+
     .hero-title {
         font-size: 90px;
-        margin-bottom: 187px;
     }
 
     .hero-list {
@@ -143,6 +152,11 @@
     }
 
     .hero-title {
-        margin: 0 146px 243px 146px;
+        max-width: 1084px;
+        margin: 0 auto;
+    }
+
+    .container-hero {
+        gap: 243px;
     }
 }
