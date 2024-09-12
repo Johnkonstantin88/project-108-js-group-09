@@ -12,11 +12,11 @@
 Ольга (https://github.com/shpionka-olga) секції About me, FAQ
 Марина (https://github.com/Maryna-01) секція Benefits
 Станіслав (https://github.com/Ssovelich) секція Projects
-Катерина (https://github.com/KatyaKhomenko) секція FAQ
 Aндрій (https://github.com/m9ta92) секція Covers
 Анатолій (https://github.com/AnatoliiDon) секція Reviews
 
-Юрій ()
+Катерина (https://github.com/KatyaKhomenko)
+Юрій (https://github.com/XekkanoYurii)
 
 
 Проєкт робили по макету Figma https://www.figma.com/design/fww6BUe77KIm14vo9i8Agm/Portfolio?node-id=2-9&node-type=frame&t=ROUAaiXWjHN7jAKJ-0
