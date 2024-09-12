@@ -16,7 +16,6 @@
   }
   
   #btn-up:hover {
-    /* background-color: var(--yellow); */
     color: var(--red);
     font-weight: 700;
   }
