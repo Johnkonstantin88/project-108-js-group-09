@@ -56,8 +56,8 @@
   text-align: center;
   line-height: normal;
 }
-.benefist-button:hover,
-.benefist-button:focus {
+.benefist-button-link:hover,
+.benefist-button-link:focus {
   border-color: #fafafa;
 }
 
@@ -68,6 +68,7 @@
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
   padding: 18px 36px;
+  display: block;
 }
 /*=================================== TABLES STYLE 768 START ==================*/
 @media screen and (min-width: 768px) {
