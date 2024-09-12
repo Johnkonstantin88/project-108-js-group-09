@@ -6,3 +6,5 @@ import './js/faq/faq';
 import './js/covers/covers';
 import './js/reviews/reviews';
 import './js/work-together/work-together';
+import './js/btn-up';
+

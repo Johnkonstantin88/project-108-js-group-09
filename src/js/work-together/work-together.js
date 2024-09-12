@@ -4,7 +4,7 @@ import 'izitoast/dist/css/iziToast.min.css';
 import { markup } from './work-together-markup';
 import { getRequest } from './work-together-api';
 import { modalCloseOptions, scrollOptions } from './modal-handler';
-import { btnUp } from './btn-up';
+
 
 const form = document.querySelector('.work-form');
 const backdrop = document.querySelector('.backdrop');
@@ -62,9 +62,3 @@ function showError(message) {
 }
 
 
-btnUp.addEventListener('click', function () {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  });
