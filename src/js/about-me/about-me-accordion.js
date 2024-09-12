@@ -31,9 +31,9 @@ const renderListDescription = (items) => {
 const renderContentAccordion = (data) => {
     const markup = data.map(item =>
         `<li class="information-item ac">
-                <h2 class="ac-header">
+                <h3 class="ac-header">
                     <button type="button" class="information-item-button ac-trigger"><span>${item.title.toUpperCase()}<span></button>
-                </h2>
+                </h3>
                 <div class="ac-panel">
                     <ul class="description-list ac-text">${renderListDescription(item.description)}</ul>
                 </div>
@@ -42,12 +42,12 @@ const renderContentAccordion = (data) => {
 };
 
 const changeStyleAccordionTriggerBtn = () => {
-    const triggerBtns = document.querySelectorAll('.ac-trigger');
+    const triggerBtns = document.querySelectorAll('.information-item-button');
     triggerBtns.forEach(triggerBtn => {
         const markup = ` <svg class="description-open-icon">
           <use href="${pathSprite}#icon-open"></use>
-        </svg>`
-        triggerBtn.insertAdjacentHTML("beforeend", markup)
+        </svg>`;
+        triggerBtn.insertAdjacentHTML("beforeend", markup);
 
     });
 }
@@ -71,7 +71,6 @@ const changePaddingOnMobileAccordion = (currentElement, paddingValue) => {
 }
 
 const onInitAccordion = () => {
-    console.log('Accordion initialized');
     const firstInformationItemEl = document.querySelector('.information-item');
     changePaddingOnMobileAccordion(firstInformationItemEl, '20px');
 };
@@ -81,14 +80,14 @@ renderContentAccordion(informationData);
 
 const accordion = new Accordion('.accordion-container', {
     duration: 500,
-    showMultiple: true,
+    showMultiple: false,
     openOnInit: [0],
     triggerClass: "information-item-button",
-    onOpen: (currentElement) => {
+    beforeOpen: (currentElement) => {
         changePaddingOnMobileAccordion(currentElement, '20px');
         scrollDownInformationPanel(currentElement);
     },
-    onClose: (currentElement) => {
+    beforeClose: (currentElement) => {
         changePaddingOnMobileAccordion(currentElement, '32px');
     },
 

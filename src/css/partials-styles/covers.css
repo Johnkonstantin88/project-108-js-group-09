@@ -12,11 +12,10 @@
 }
 
 .covers-section {
-    background-image: url(../img/covers/elements_vectors.png);
+    background-image: url(/img/covers/vectors@1x.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin-bottom: 64px;
 }
 
 .covers-container {
@@ -65,9 +64,6 @@
 
 /* MEDIA */
 @media screen and (min-width: 768px) {
-    .covers-section {
-        margin-bottom: 96px;
-    }
 
     .covers-container {
         max-height: 960px;
@@ -89,8 +85,16 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media
+
+/* only for retina displays */
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
     .covers-section {
-        margin-bottom: 164px;
+        background-image: url(/img/covers/vectors@2x.png);
     }
 }
