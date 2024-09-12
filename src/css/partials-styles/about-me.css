@@ -333,7 +333,7 @@ body .information-item .ac-panel .description-list {
     }
 
     /*------------------Second part---------------------*/
-    body .information-item .information-item-button:focus {
+    body .information-item .information-item-button:focus-visible {
         outline: -webkit-focus-ring-color auto 1px;
     }
 
