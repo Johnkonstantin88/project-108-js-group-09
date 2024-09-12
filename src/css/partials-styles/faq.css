@@ -35,6 +35,7 @@ body .faq-item .faq-item-button {
   font-family: 'Inter Tight', sans-serif;
   border: none;
   padding: 0 59px 16px 0;
+  outline: transparent;
 }
 
 body .ac .faq-item-button:focus {
@@ -102,6 +103,10 @@ body .ac .faq-item-button:focus {
 
   body .faq-item .faq-item-button {
     padding-bottom: 26px;
+  }
+  
+  body .faq-item .faq-item-button:focus-visible {
+    outline: -webkit-focus-ring-color auto 1px; 
   }
 
   .icon-btn-faq {

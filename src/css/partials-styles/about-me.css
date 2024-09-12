@@ -73,7 +73,7 @@ body .information-item .information-item-button{
     color: rgba(250, 250, 250, 0.4);
     border: none;
     padding: 0 59px 12px 0; 
-    outline: none;
+    outline: transparent;
 }
 
 .information-container>.information-item{
@@ -333,7 +333,7 @@ body .information-item .ac-panel .description-list {
     }
 
     /*------------------Second part---------------------*/
-    body .information-item .information-item-button:focus {
+    body .information-item .information-item-button:focus-visible {
         outline: -webkit-focus-ring-color auto 1px;
     }
 
