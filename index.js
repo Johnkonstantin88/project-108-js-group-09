@@ -25,7 +25,7 @@ import{A as L,S as m,N as f,M as h,K as g,a,i as S}from"./assets/vendor-D-8sXfAR
           </p>
         </li>
   `};a.defaults.baseURL="https://portfolio-js.b.goit.study";const J=async()=>(await a.get("api/reviews")).data;let _=new m(".swiper-container",{modules:[f,g,h],speed:1e3,navigation:{nextEl:".review-swiper-button-next",prevEl:".review-swiper-button-prev"},keyboard:{enabled:!0,onlyInViewport:!0},mousewheel:{enabled:!0,eventsTarget:".swiper-container"},breakpoints:{1440:{spaceBetween:16,slidesPerView:4},768:{slidesPerView:2,spaceBetween:16},320:{slidesPerView:1}}});const k=document.querySelector(".reviews-list"),Q=async()=>{try{const t=(await J()).map(o=>G(o)).join("");k.insertAdjacentHTML("beforeend",t)}catch{_.disable(),S.show({message:"❌ Oh no, something went wrong",color:"red",position:"topRight"}),k.innerHTML=`<li class="error-case">Unfortunately we can't find any reviews try again later</li>`}};Q();function X(e,t){return`<div class="modal">
-        <button class="modal-close-btn" data-modal-close={true}>
+        <button class="modal-close-btn" data-modal-close={true} aria-label="close modal">
             <svg class="modal-close-icon">
                 <use href="${x}#close"></use>
             </svg>
