@@ -51,7 +51,7 @@
   padding-bottom: 20px;
   outline: transparent;
   white-space: nowrap;
-  overflow: hidden; /* Обрізання переповнення */
+  overflow: hidden;
   text-overflow: ellipsis;
   transition: border-bottom-color var(--timing-function);
 }
@@ -69,8 +69,7 @@
 }
 
 .form-input:hover,
-.form-input:focus
- {
+.form-input:focus {
   border-bottom-color: var(--white);
 }
 
@@ -127,6 +126,8 @@
     font-size: 12px;
   }
 }
+
+/* =========================== Tablet =============== */
 @media screen and (min-width: 768px) {
   .work-container {
     padding-top: 80px;
@@ -155,7 +156,6 @@
   .work-item {
     font-size: 16px;
   }
-
   .work-link {
     display: block;
     padding: 18px 32px;
@@ -171,7 +171,7 @@
     transform: translateY(13px);
   }
 }
-
+/* =========================== Desktop =============== */
 @media screen and (min-width: 1440px) {
   .work-container {
     padding: 80px 194px 169px 196px;
