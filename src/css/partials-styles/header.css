@@ -35,8 +35,13 @@
 .svg {
   background: transparent;
   stroke: var(--white);
+  transition: stroke var(--timing-function);
 }
 
+.svg:hover,
+.svg:focus{
+  stroke: var(--red);
+}
 .header-burger-button {
   position: absolute;
   right: 0;
@@ -131,6 +136,12 @@
   color: var(--white);
   position: absolute;
   bottom: 64px;
+  transition: background-color var(--timing-function);
+}
+
+.mobile-anchor:hover,
+.mobile-anchor:focus {
+  background-color: #e0373f;
 }
 
 .mobile-menu-list {
@@ -146,6 +157,12 @@
   text-decoration-skip-ink: none;
   color: var(--white);
   margin-bottom: 12px;
+  transition: color var(--timing-function);
+}
+
+.mobile-list-item:hover,
+.mobile-list-item:focus {
+  color: var(--red);
 }
 
 @media screen and (min-width: 768px) {
