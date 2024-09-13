@@ -13,33 +13,30 @@ const commentSpan = document.querySelector('#comment-span');
 
 form.addEventListener('submit', onSubmit);
 
-async function onSubmit(e) {
-  e.preventDefault();
-
-  const { email, comments } = e.currentTarget.elements;
-
+const checkInputsValidation =( email, comments)=>{
   const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
   const regExp = new RegExp(emailPattern);
-  const validateEmail = regExp.test(email.value);
-  const validateComment = comments.value.length === 0;
+  const validEmail = regExp.test(email.value);
+  const validComment = comments.value.length !== 0;
 
-  if (!validateEmail && validateComment) {
+  let isValidFields = true;
+  if (!validEmail) {
+    isValidFields = false;
     inputErrorText(email, emailSpan);
-    inputErrorText(comments, commentSpan);
-
-    return;
   }
 
-  if (!validateEmail && !validateComment) {
-    inputErrorText(email, emailSpan);
-
-    return;
-  }
-
-  if (validateComment) {
+  if (!validComment) {
+    isValidFields = false;
     inputErrorText(comments, commentSpan);
+  }
+  return isValidFields;
+}; 
 
-    return;
+async function onSubmit(e) {
+  e.preventDefault();
+  const  { email, comments } = e.currentTarget.elements;
+  if( !checkInputsValidation(email, comments) ){
+     return;
   }
 
   const formData = {
