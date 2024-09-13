@@ -51,11 +51,11 @@ async function onSubmit(e) {
     const { title, message } = await getRequest(formData);
 
     backdrop.classList.add('is-open');
-    scrollOptions.disableScroll();
     backdrop.innerHTML = markup(title, message);
-
+    scrollOptions.disableScroll();
     modalCloseOptions.onBind(backdrop);
     modalCloseOptions.onBackdropCLick();
+   
 
     form.reset();
     clearInputError(email, comments, emailSpan, commentSpan);

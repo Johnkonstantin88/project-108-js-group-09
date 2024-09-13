@@ -1,3 +1,5 @@
+import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+
 export const modalCloseOptions = {
   onBind(instance) {
     this.handleCallback = onClose.bind(instance);
@@ -36,7 +38,10 @@ export const scrollOptions = {
 
   disableScroll() {
     document.body.style.overflow = 'hidden';
-    this.fixBlocks.forEach(el => el.style.paddingRight - this.paddingOffset);
+    this.fixBlocks.forEach(el => {
+      disableBodyScroll(el);
+      return el.style.paddingRight - this.paddingOffset;
+    });
     document.body.style.paddingRight = this.paddingOffset;
   },
 
@@ -46,5 +51,6 @@ export const scrollOptions = {
       el.style.paddingRight = '0px';
     });
     document.body.style.paddingRight = '0px';
+    clearAllBodyScrollLocks();
   },
 };

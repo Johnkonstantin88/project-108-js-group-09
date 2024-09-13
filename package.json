@@ -19,6 +19,7 @@
   "dependencies": {
     "accordion-js": "^3.3.4",
     "axios": "^1.5.0",
+    "body-scroll-lock": "^4.0.0-beta.0",
     "izitoast": "^1.4.0",
     "swiper": "^11.1.12",
     "vite-plugin-commonjs": "^0.10.1",
