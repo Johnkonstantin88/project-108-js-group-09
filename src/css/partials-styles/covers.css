@@ -12,17 +12,19 @@
 }
 
 .covers-section {
-    padding-bottom: 64px;
+    background-image: url(/img/covers/vectors@1x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .covers-container {
     position: relative;
     display: flex;
     max-height: 508px;
-    justify-content: start;
-    background-image: url(../img/covers/elements_vectors.png);
-    background-position: center;
+    justify-content: center;
     overflow: hidden;
+
 }
 
 .covers-list {
@@ -48,23 +50,20 @@
 
 @keyframes inViewport {
     0% {
-        transform: translateX(0%);
+        transform: translateX(50%);
     }
 
     50% {
-        transform: translateX(-220%);
+        transform: translateX(-50%);
     }
 
     100% {
-        transform: translateX(0%);
+        transform: translateX(50%);
     }
 }
 
 /* MEDIA */
 @media screen and (min-width: 768px) {
-    .covers-section {
-        padding-bottom: 96px;
-    }
 
     .covers-container {
         max-height: 960px;
@@ -84,38 +83,18 @@
         column-gap: 60px;
         margin-bottom: 60px;
     }
-
-    @keyframes inViewport {
-        0% {
-            transform: translateX(0%);
-        }
-
-        50% {
-            transform: translateX(-200%);
-        }
-
-        100% {
-            transform: translateX(0%);
-        }
-    }
 }
 
-@media screen and (min-width: 1440px) {
+@media
+
+/* only for retina displays */
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
     .covers-section {
-        padding-bottom: 164px;
-    }
-
-    @keyframes inViewport {
-        0% {
-            transform: translateX(0%);
-        }
-
-        50% {
-            transform: translateX(-70%);
-        }
-
-        100% {
-            transform: translateX(0%);
-        }
+        background-image: url(/img/covers/vectors@2x.png);
     }
 }

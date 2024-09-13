@@ -13,6 +13,7 @@ const getCardInfo = async () => {
       .join('');
     reviewsList.insertAdjacentHTML('beforeend', cardsTemplate);
   } catch (err) {
+    swiper.disable();
     iziToast.show({
       message: `❌ Oh no, something went wrong`,
       color: 'red',

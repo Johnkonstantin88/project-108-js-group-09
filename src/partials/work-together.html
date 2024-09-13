@@ -1,0 +1,79 @@
+<section class="work-together" id="work-together">
+  <div class="container work-container">
+    <div class="work-wrap">
+      <picture>
+        <source
+          srcset="
+            /img/work-together/man-tablet.png    1x,
+            /img/work-together/man-tablet@2x.png 2x
+          "
+          media="(min-width: 768px)"
+          width="70"
+          height="70"
+        />
+        <source
+          srcset="
+            /img/work-together/man-mobile.png    1x,
+            /img/work-together/man-mobile@2x.png 2x
+          "
+          media="(max-width: 768px)"
+          width="44"
+          height="44"
+        />
+
+        <img
+          class="work-img"
+          src="/img/work-together/man-mobile.png"
+          alt="avatar Lloyd"
+          loading="lazy"
+          width="44"
+          height="44"
+        />
+      </picture>
+      <h2 class="work-title">
+        Let's <span class="text-red">work</span><br />
+        <span class="text-under">together</span>
+      </h2>
+    </div>
+    <form class="work-form">
+      <label class="form-label">
+        <input
+          id="input-email"
+          class="form-input"
+          type="text"
+          name="email"
+          placeholder="clients@gmail.com"
+        />
+        <span class="email-span" id="email-span">Invalid email, try again</span>
+      </label>
+      <label class="form-label">
+        <input
+          class="form-input"
+          type="text"
+          name="comments"
+          placeholder="comments"
+        />
+        <span class="comment-span" id="comment-span">Empty field</span>
+      </label>
+      <button class="form-btn" type="submit">Send</button>
+    </form>
+    <ul class="work-list">
+      <li class="work-item">
+        <a class="work-link" href="mailto:lloydjefferson@gmail.com"
+          >lloydjefferson@gmail.com</a
+        >
+      </li>
+      <li class="work-item">
+        <a class="work-link" href="tel:+3801111111111">+380 11 1111 11 11</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===========================  BACKDROP  ==================================== -->
+
+<div class="backdrop" data-fix-block></div>
+
+<!-- /* ========================= BTN UP ================= */ -->
+
+<button id="btn-up">Up</button>

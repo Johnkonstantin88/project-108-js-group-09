@@ -1,8 +1,6 @@
 .benefits-section {
   padding-bottom: 64px;
-  margin: 0;
 }
-
 
 .benefits-title {
   font-weight: 600;
@@ -14,12 +12,13 @@
   margin-bottom: 32px;
 }
 
-
 .benefist-menu {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin-bottom: 32px;
 }
+
 .benefist-item {
   border-radius: 20px;
   padding: 24px;
@@ -32,8 +31,8 @@
   margin-bottom: 64px;
 }
 .benefits-icon {
- width: 48px;
- height: 48px;
+  width: 48px;
+  height: 48px;
 }
 
 .benefist-item-title {
@@ -53,36 +52,28 @@
 }
 .benefist-button {
   width: 187px;
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  border-radius: 60px;
-  padding: 18px 36px;
-  margin-top: 32px;
 
-
+  text-align: center;
+  line-height: normal;
 }
-.benefist-button:hover,
-.benefist-button:focus {
+.benefist-button-link:hover,
+.benefist-button-link:focus {
   border-color: #fafafa;
 }
 
 .benefist-button-link {
   letter-spacing: -0.02em;
   color: #fafafa;
+
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 18px 36px;
+  display: block;
 }
 /*=================================== TABLES STYLE 768 START ==================*/
 @media screen and (min-width: 768px) {
-  /* .container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  } */
-
   .benefits-section {
     padding-bottom: 96px;
-  }
-
-  .benefist-button {
-    margin-top: 64px;
   }
 
   .benefist-menu {
@@ -91,6 +82,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 64px;
   }
 }
 
@@ -98,10 +90,6 @@
 
 /*=================================== DESKTOP STYLE 1440 START==================*/
 @media screen and (min-width: 1440px) {
-  /* .container {
-    max-width: 1440px;
-  } */
-
   .benefits-section {
     padding-bottom: 164px;
   }
@@ -111,7 +99,8 @@
     justify-content: space-between;
   }
 
-  
-
+  .benefits-title {
+    margin: 0;
+  }
 }
 /*=================================== DESKTOP STYLE FINISH ==================*/

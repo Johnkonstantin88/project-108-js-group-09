@@ -11,6 +11,7 @@
 
 .about-me-section {
     padding-bottom: 64px;
+    padding-top: 64px;
 }
 
 .presentation-container{
@@ -53,11 +54,14 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 .img-about-me{
     border-radius: 24px;
     height: 100%;
 }
+
 /*------------------Second part---------------------*/
+
 body .information-item .information-item-button{
     font-family: 'Inter Tight', sans-serif;
     background-color: inherit;
@@ -69,8 +73,8 @@ body .information-item .information-item-button{
     color: rgba(250, 250, 250, 0.4);
     border: none;
     padding: 0 59px 12px 0; 
+    outline: transparent;
 }
-
 
 .information-container>.information-item{
     margin-top: 0;
@@ -86,7 +90,7 @@ body .information-item .information-item-button{
     background-color: var(--black);
 }
 
-body .information-item .ac-panel .ac-text {
+body .information-item .ac-panel .description-list {
     color: var(--white);
     background-color: var(--black);
     padding: 12px 0 0 0;
@@ -106,13 +110,19 @@ body .information-item .ac-panel .ac-text {
     content: ""; 
 }
 
+.information-item:first-child .ac-panel .description-list{
+    gap: 32px;
+}
+
 .information-container{
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin-bottom: 32px;
 }
+
 .description-open-icon{
+    position: absolute;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 50%;
     padding: 9px;
@@ -121,7 +131,6 @@ body .information-item .ac-panel .ac-text {
 
     text-align: center;
     transform: translateY(-50%);
-    position: absolute;
     top: 50%;
     right: 0px;
     transition: transform var(--timing-function);
@@ -132,6 +141,7 @@ body .information-item .ac-panel .ac-text {
 }
 
 /*------------------Third part---------------------- */
+
 .hard-skills-container-wrapper {
     position: relative;
 }
@@ -181,6 +191,7 @@ body .information-item .ac-panel .ac-text {
     z-index: 999;
     margin-top: 0;
 }
+
 .hard-skills-container>.hard-skills-navigation-button::after{
     content: none;
 }
@@ -193,7 +204,12 @@ body .information-item .ac-panel .ac-text {
     rotate: 180deg;
 }
 
-.hard-skills-navigation-button button {
+.hard-skills-navigation-button-next:hover .arrow-right,
+.hard-skills-navigation-button-next:focus .arrow-right {
+    stroke: var(--white);
+}
+
+.hard-skills-navigation-button-next {
     background: none;
     padding: 0;
     border: none;
@@ -205,8 +221,8 @@ body .information-item .ac-panel .ac-text {
 
 .hard-skills-item {
     padding: 20px;
-    transition: background-color var(--timing-function);
 }
+
 .hard-skills-text{
     font-size: 16px;
     line-height: 1.5;
@@ -215,15 +231,20 @@ body .information-item .ac-panel .ac-text {
 }
 
 @media screen and (min-width: 375px) {
+
     /*------------------Fist part---------------------- */
+
     .presentation-summary {
             font-size: 24px;
     }
+
     /*-----------------Third part---------------------- */
+
     .hard-skills-container {
         max-width: 260px;
         height: 130px;
     }
+
     .hard-skills-navigation-button .arrow-right {
         width: 28px;
         height: 28px;
@@ -231,13 +252,17 @@ body .information-item .ac-panel .ac-text {
 }
 
 @media screen and (min-width: 768px) {
+
     /*------------------Fist part---------------------- */
+
     .about-me-section {
         padding-bottom: 96px;
     }
+
     .presentation-container{
         margin-bottom: 64px;
     }
+
     .presentation-summary{
         padding: 64px 64px 436px 64px;
         font-size: 38px;
@@ -247,19 +272,29 @@ body .information-item .ac-panel .ac-text {
     .img-about-me, .presentation-summary {
         flex-basis: 50%;
     }
+
     /*------------------Second part---------------------*/
+
     body .information-item .information-item-button {
             padding: 0 59px 16px 0;
     }
+
+    .information-item:first-child .ac-panel .description-list {
+        gap: 16px;
+    }
+
     .description-open-icon {
         width: 40px;
         height: 40px;
     }
+
     .information-container {
         gap: 32px;
         margin-bottom: 64px;
     }
+
     /*------------------Third part---------------------- */
+
     .hard-skills-list {
         max-width: 600px;
     }
@@ -278,32 +313,50 @@ body .information-item .ac-panel .ac-text {
         width: 40px;
         height: 40px;
     }
+
     .hard-skills-text {
         font-size: 20px;
     }
 }
 
 @media screen and (min-width: 1440px) {
+    /*------------------Fist part---------------------- */
+
     .about-me-section {
-        padding-bottom: 82px;
+        padding-bottom: 164px;
+        padding-top: 96px;
     }
+
     .presentation-container {
         flex-direction: row;
         margin-bottom: 96px;
     }
+
+    /*------------------Second part---------------------*/
+    body .information-item .information-item-button:focus-visible {
+        outline: -webkit-focus-ring-color auto 1px;
+    }
+
     body .information-item .ac-panel{
         padding-right: 68px;
         padding-top: 8px;
         width: 612px;
         margin-left: auto;
     }
+    .information-item:first-child .ac-panel .description-list {
+        gap: 32px;
+    }
+
     /*------------------Third part---------------------- */
+
     .hard-skills-container {
         max-width: 1200px;
     }
+
     .hard-skills-navigation-button{
         right: 32px;
     }
+
     .hard-skills-container-wrapper{
         padding: 0 32px 0 32px;
     }
