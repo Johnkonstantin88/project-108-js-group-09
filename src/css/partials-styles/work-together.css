@@ -319,7 +319,7 @@
   right: 20px;
   z-index: 1000;
   border: none;
-  outline: none;
+  outline: transparent;
   background-color: var(--black);
   color: var(--white);
   cursor: pointer;
@@ -327,6 +327,7 @@
   border-radius: 10px;
   border: 1px solid var(--white);
   font-size: 18px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #btn-up:hover {
