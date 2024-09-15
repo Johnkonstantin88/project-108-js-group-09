@@ -2,11 +2,7 @@ import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
 const accordion = new Accordion('.faq-list', {
-  duration: 250,
+  duration: 300,
   showMultiple: false,
-  triggerClass: "faq-item-button",
+  triggerClass: 'toggle-btn',
 });
-
-
-
-

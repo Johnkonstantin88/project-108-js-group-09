@@ -1,6 +1,5 @@
 .faq-section {
   padding-bottom: 64px;
-  background-color: var(--black);
 }
 
 .faq-title {
@@ -18,28 +17,28 @@
   display: grid;
 }
 
-.faq-list .ac .faq-item-button::after {
+.faq-list .ac .toggle-btn::after {
   content: '';
 }
 
-.faq-list .ac.is-active > .ac-header .faq-item-button::after {
+.faq-list .ac.is-active > .ac-header .toggle-btn::after {
   content: '';
 }
 
-body .faq-item .faq-item-button {
+body .faq-item .toggle-btn {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: -0.02em;
-  color: var(--white);
+  color: #fff;
   font-family: 'Inter Tight', sans-serif;
   border: none;
   padding: 0 59px 16px 0;
   outline: transparent;
 }
 
-body .ac .faq-item-button:focus {
-  color: var(--white);
+body .ac .toggle-btn:focus {
+  color: #fff;
 }
 
 .faq-list > .faq-item {
@@ -68,16 +67,15 @@ body .ac .faq-item-button:focus {
 
   top: 38px;
   right: 0px;
-  transition: transform var(--timing-function); 
+  transition: transform var(--timing-function);
 }
 
 .faq-list .faq-item.is-active > .ac-header .icon-btn-faq {
   transform: translateY(-100%) rotate(180deg);
 }
 
-.faq-list .faq-item .ac-panel .faq-description {
+.faq-list .faq-item .ac-panel .faq-content {
   font-family: 'Inter Tight', sans-serif;
-  background-color: var(--black);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -101,12 +99,12 @@ body .ac .faq-item-button:focus {
     padding-bottom: 32px;
   }
 
-  body .faq-item .faq-item-button {
+  body .faq-item .toggle-btn {
     padding-bottom: 26px;
   }
-  
-  body .faq-item .faq-item-button:focus-visible {
-    outline: -webkit-focus-ring-color auto 1px; 
+
+  body .faq-item .toggle-btn:focus-visible {
+    outline: -webkit-focus-ring-color auto 1px;
   }
 
   .icon-btn-faq {
